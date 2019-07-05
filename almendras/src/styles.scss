@@ -1,1 +1,64 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url(fuentes/Pacifico/Pacifico-Regular.ttf)
+}
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url(fuentes/Pacifico/Pacifico-Regular.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Black';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Black.ttf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-BlackItalic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Blackitalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Bold.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-BoldItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Italic';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Italic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url(fuentes/Playfair_Display/PlayfairDisplay-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySc-Black';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Black.ttf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySc-BlackItalic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-BlackItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Bold';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-BoldItalic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-BoldItalic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Italic';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Italic.ttf)
+}
+@font-face {
+    font-family: 'PlayfairDisplaySc-Regular';
+    src: url(fuentes/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf)
+}
+
+h1{
+    color:blue;
+    font-family: "Pacifico-Regular";
+}
