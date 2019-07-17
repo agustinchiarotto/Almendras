@@ -11,5 +11,5 @@ export class ProductosComponent implements OnInit {
 
   ngOnInit() {
   }
-
+//arreglo con ngfor
 }
