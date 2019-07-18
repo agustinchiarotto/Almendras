@@ -35,7 +35,8 @@ hr.new4 {
   //ver como hacer para que empiece cuando se enfoca el container
   .prueba{
     animation-name: fadeInDown;
-    animation-duration: 3s;
+    animation-duration: 4s;
+    animation-play-state: running;
   }
   .fondoConocenos{
     background: url("../../assets/imagenes/fondoconocenos.png") no-repeat fixed; 
@@ -44,8 +45,11 @@ hr.new4 {
     height: auto;
   
   }
-
   
+  .tarjeta{
+    max-width:70%;
+    max-height: 45%;
+  }
 
 
 
