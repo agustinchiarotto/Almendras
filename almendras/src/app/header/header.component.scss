@@ -45,13 +45,15 @@ a{
 
 .naranja{
     border-top: 8px solid rgb(202, 102, 36);
+    max-width: 50%;
+  margin-left: 0%;
+    overflow:auto; 
    
 }
 
 .form-inline{
    
-    padding-top: 2.4%;
-    border-top: 8px solid rgb(202, 102, 36);
+margin-top: 15%;
 
 }
 
@@ -59,6 +61,8 @@ a{
     margin-left: 10%;
 }
 
-
+#navbarSupportedContent{
+    margin-right: -10%;
+}
 
 
