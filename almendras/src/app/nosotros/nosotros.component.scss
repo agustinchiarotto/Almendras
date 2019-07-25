@@ -45,7 +45,22 @@ hr.new4 {
     height: auto;
   
   }
-  
+  .motion_image_block{
+    position:relative;
+    display:block;
+    top:0;
+    left:0;
+  }
+  .motion_image_block>.mask{
+    position:relative;
+    overflow:hidden;
+  }
+  .motion_image_block>.mask>.image{
+    margin:0 auto;
+    display:block;
+    position:absolute;
+  }
+
   .tarjeta{
     max-width:70%;
     max-height: 45%;
