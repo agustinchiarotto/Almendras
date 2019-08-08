@@ -14,7 +14,8 @@ export class GoogleMapComponent implements OnInit {
   
 
   title: string = 'My first AGM project';
-  lat: number = 51.678418;
-  lng: number = 7.809007;
+  lat: number = -38.9411626;
+  lng: number = -68.1504201;
+  zoom:number = 5;
 
 }
