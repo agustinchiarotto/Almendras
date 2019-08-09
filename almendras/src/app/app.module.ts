@@ -14,6 +14,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,10 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCiUl0t3_wkX1n_bRWaUhsKrPoQKucR9co'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

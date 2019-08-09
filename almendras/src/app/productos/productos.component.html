@@ -1,38 +1,97 @@
-  
-  
-  <div class="w3-container m-1 align-items-center fondoNegro "  style="display:table-row;max-width: 100%;">
+<div class="w3-container m-1 align-items-center fondoNegro " style="display:table-row;max-width: 100%;">
+  <h1 class="text-center mt-5 " style="max-width: 100%;">
+    Nuestros Productos
+    <hr class="new4">
+  </h1>
 
-    <h1 class="text-center mt-5 " style="max-width: 100%;">
-      Nuestros Productos
-      <hr class="new4">
-    </h1>
+  <div class="text-center m-1  textoBlanco" style="color:white;    margin-top: -1.15%;">
 
-  
-
-    <div class="text-center m-1  textoBlanco" style="color:white;    margin-top: -1.15%;">
-      
-        La tierra, el agua y el clima de esta región de la patagonia le confieren a nuestros <br>
-        frutos secos sabor, color y tamaños inigualables.
-    </div>
-
-    <div class="row ">
-      <div class="col">
-      
-          <img src="assets/imagenes/almendranatural.png" alt="" >
-          <p class="textoBlanco text-center">Dulces</p>
-      </div>
-      <div class="col">
-          <img src="assets/imagenes/almendranatural.png" alt="">
-          <p class="textoBlanco text-center">Salados</p>
-      </div>
-      <div class="col" >
-          <img src="assets/imagenes/almendranatural.png" alt="">
-          <p class="textoBlanco text-center">Naturales  </p>
-      </div>
-      
-    </div>
-
+    La tierra, el agua y el clima de esta región de la patagonia le confieren a nuestros <br>
+    frutos secos sabor, color y tamaños inigualables.
   </div>
-  
-  
- 
+
+  <div class="row ">
+    <div class="col">
+
+      <img src="assets/imagenes/almendranatural.png" alt="">
+      <p class="textoBlanco text-center">Dulces</p>
+    </div>
+    <div class="col">
+      <img src="assets/imagenes/almendranatural.png" alt="">
+      <p class="textoBlanco text-center">Salados</p>
+    </div>
+    <div class="col">
+      <img src="assets/imagenes/almendranatural.png" alt="">
+      <p class="textoBlanco text-center">Naturales </p>
+    </div>
+  </div>
+</div>
+<div class="w3-container m-1 align-items-center fondoMarron" style="display:table-row; max-width: 100%; height: 2em;">
+  <h1></h1>
+</div>
+<div class="w3-container m-1 align-items-center" style="display:table-row; max-width: 100%;">
+  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+    Dulces
+  </h1>
+  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Tardes tentadoras</h2>
+    <div id="parent">
+      <div class="child" *ngFor="let dulce of dulces">
+          <img class="center" src="{{dulce.imagen}}" alt="imagen" width="500px">
+          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+            {{dulce.nombre}}</h2>
+          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+            {{dulce.negrita}}</h2>
+      </div>
+    </div>
+</div>
+<div class="w3-container m-1 align-items-center fondoAmarillo" style="display:table-row; max-width: 100%; height: 2em;">
+  <h1></h1>
+</div>
+<div class="w3-container m-1 align-items-center" style="display:table-row; max-width: 100%;">
+  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+    Salados
+  </h1>
+  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Deliciosos encuentros</h2>
+    <div id="parent">
+      <div class="child" *ngFor="let salado of salados">
+          <img class="center" src="{{salado.imagen}}" alt="imagen" width="500px">
+          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+            {{salado.nombre}}</h2>
+          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+            {{salado.negrita}}</h2>
+      </div>
+    </div>
+</div>
+<div class="w3-container m-1 align-items-center fondoVerde" style="display:table-row; max-width: 100%; height: 2em;">
+  <h1></h1>
+</div>
+<div class="w3-container m-1 align-items-center" style="display:table-row; max-width: 100%;">
+  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+    Naturales
+  </h1>
+  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Sabor y equilibrio natural</h2>
+    <div id="parent">
+      <div class="child" *ngFor="let natural of naturales">
+          <img class="center" src="{{natural.imagen}}" alt="imagen" width="500px">
+          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+            {{natural.nombre}}</h2>
+          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+            {{natural.negrita}}</h2>
+      </div>
+    </div>
+</div>
+<div class="w3-container m-1 align-items-center" style="display:table-row; max-width: 100%;">
+  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+    Harinas
+  </h1>
+  <hr class="new2">
+    <div id="parent">
+      <div class="child" *ngFor="let harina of harinas">
+          <img class="center" src="{{harina.imagen}}" alt="imagen" width="500px">
+          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+            {{harina.nombre}}</h2>
+          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+            {{harina.negrita}}</h2>
+      </div>
+    </div>
+</div>

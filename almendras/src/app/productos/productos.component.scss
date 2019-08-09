@@ -13,6 +13,12 @@ hr.new4 {
     background-color: black;
   }
 
+  hr.new2 {
+    width: 20%;
+    border: 3.5px solid #82AA52;
+    background-color: black;
+  }
+
   img{
       max-width: 100%;
   }
@@ -21,6 +27,53 @@ hr.new4 {
     background-color: black;
   }
 
+.fondoMarron{
+  background-color: #472f24;
+}
+
+.fondoAmarillo{
+  background-color: #F0C658;
+}
+
+.fondoVerde{
+  background-color: #82AA52;
+}
+
+* {
+  box-sizing: border-box;  
+}
+
+#parent {
+  margin-left: 30vh;
+  margin-right: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10vh;
+}
+
+.child {
+  flex: 1;
+  min-width: 30%;
+  border: 5px solid white;
+}
+
+@media (max-width: 700px) {
+  .child {
+    min-width: 33.33%; 
+  }
+}
+
+@media (max-width: 400px) {
+  .child {
+    min-width: 50%; 
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* .w3-container{
     margin: 0;
   } */
