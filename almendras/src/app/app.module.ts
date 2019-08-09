@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +13,8 @@ import { RecetasComponent } from './recetas/recetas.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCiUl0t3_wkX1n_bRWaUhsKrPoQKucR9co'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,11 +5,93 @@ a{
 .navbar-nav > li{
     padding-left:30px;
     padding-right:30px;
+    top:0;
   }
 
+  
+
 .navbar{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
     padding-left: 5%;
     padding-right: 5%;
     background-color: white;
 }
+
+.mont{
+    font-family: 'Montserrat-Black';
+}
+
+.hr{
+    max-width: 80%;
+    border: 1px solid;
+}
+
+.celeste{
+    border-top: 8px solid rgb(36, 141, 202);
+    
+}
+
+.amarillo{
+    border-top: 8px solid rgb(201, 204, 0);
+    
+}
+
+.violeta{
+    border-top: 8px solid rgb(202, 36, 202);
+    
+}
+
+.verde{
+    border-top: 8px solid rgb(55, 168, 10);
+    
+}
+
+.naranja{
+    border-top: 8px solid rgb(202, 102, 36);
+    max-width: 50%;
+   margin-left: 0%;
+    overflow:auto; 
+   
+}
+
+.form-inline{
+   
+margin-top: 15%;
+
+}
+
+.dropdown-menu{
+    margin-left: 10%;
+}
+
+#navbarSupportedContent{
+    margin-right: -10%;
+}
+
+.hambur{
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+
+
+}
+
+.hambur:hover{
+    opacity: 1;
+ 
+
+
+}
+
+
+
+
+
+
+
+
+
 
