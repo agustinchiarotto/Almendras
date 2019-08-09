@@ -12,27 +12,27 @@ export class ProductosComponent implements OnInit {
   dulces = [{
     nombre: 'ALMENDRAS',
     negrita: 'CON CHOCOLATE',
-    imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+    imagen: '../../assets/imagenes/dulces_alm_choco.jpg' 
   },
   {
     nombre: 'PASAS DE UVA',
     negrita: 'CON CHOCOLATE',
-    imagen: '../../assets/imagenes/caja_pasas_chocolate.png' 
+    imagen: '../../assets/imagenes/dulces_pasas_choco.jpg' 
   },
   {
     nombre: 'AVELLANAS',
     negrita: 'CON CHOCOLATE',
-    imagen: '../../assets/imagenes/caja_pasas_uva.png' 
+    imagen: '../../assets/imagenes/dulces_avellana_choco.jpg' 
   },
   {
     nombre: 'ALMENDRAS',
-    negrita: 'CON CHOCOLATE',
-    imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+    negrita: 'DULCES',
+    imagen: '../../assets/imagenes/dulces_alm_dulces.jpg' 
   },
   {
     nombre: 'ALMENDRAS',
-    negrita: 'CON CHOCOLATE',
-    imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+    negrita: 'EN GARRAPINIADA',
+    imagen: '../../assets/imagenes/dulces_garra.jpg' 
   }
 ];
 

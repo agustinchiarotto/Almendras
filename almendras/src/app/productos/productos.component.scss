@@ -1,6 +1,5 @@
-h1{
-    color:white;
-
+.h1{
+  text-shadow: 1px
 }
 
 .textoBlanco{
@@ -10,7 +9,8 @@ h1{
 hr.new4 {
     width: 50%;
     border: 1.5px solid rgba(245,203,88,1);
-    background-color: black;
+    background-color: black;  
+      margin-top: 0.7%;
   }
 
   hr.new2 {
@@ -70,10 +70,33 @@ hr.new4 {
 }
 
 .center {
+  text-align:center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.tituloConocenos{
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 52px;
+}
+
+.textoConocenos{
+  font-family: "Montserrat-Light";
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+
 /* .w3-container{
     margin: 0;
+
+
+    montserrat ligth interlineado 17 tama;o 14 bajar en nuestros
   } */
