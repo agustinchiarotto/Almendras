@@ -11,5 +11,11 @@ export class GoogleMapComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+
+  title: string = 'My first AGM project';
+  lat: number = -38.9411626;
+  lng: number = -68.1504201;
+  zoom:number = 5;
 
 }
