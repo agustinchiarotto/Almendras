@@ -9,6 +9,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
+import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
 
 
 
@@ -20,7 +21,7 @@ import {
 
     trigger('hamburTrigger', [
       // ...
-      state('hamburguesa', style({
+      state('armado', style({
         
         opacity: 0.8,
        
@@ -30,10 +31,10 @@ import {
         opacity: 1,
     
       })),
-      transition('hamburguesa => normal', [
+      transition('armado => normal', [
         animate('0.5s')
       ]),
-      transition('normal => hamburguesa', [
+      transition('normal => armado', [
         animate('0.5s')
       ]),
     ]),
@@ -42,6 +43,7 @@ import {
 export class HeaderComponent implements OnInit {
   prevScrollpos = window.pageYOffset;
   hamburguesa:boolean=false;
+  armado:boolean=false;
   constructor() { 
 
   }
@@ -65,10 +67,10 @@ export class HeaderComponent implements OnInit {
   }
 
   mouseEnter(){
-    this.hamburguesa=false
+    this.armado=false
   }
   mouseLeave(){
-    this.hamburguesa=true;
+    this.armado=true;
   }
 
 }
