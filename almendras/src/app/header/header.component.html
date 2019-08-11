@@ -1,13 +1,14 @@
 
-<nav [@hamburTrigger]="hamburguesa ? 'hamburguesa' : 'normal'" class="navbar fixed-top navbar-expand-lg navbar-ligth bg-ligth mont" id="header" [ngClass]="{'hambur':hamburguesa}" 
+<nav [@hamburTrigger]="armado ? 'armado' : 'normal'" class="navbar fixed-top top-nav-collapse  navbar-ligth bg-ligth mont" id="header" [ngClass]="{'hambur':hamburguesa,'navbar-expand-lg':!hamburguesa }"
 (mouseenter) ="mouseEnter()"  (mouseleave) ="mouseLeave()">
  
  
  <!-- [ngClass]="{'hambur':hamburguesa}"  -->
  
   <a class="navbar-brand" href="#" style="float: left">
-    <img src="https://scontent.fnqn2-2.fna.fbcdn.net/v/t1.0-9/18446552_1859269294340180_9034582047514495844_n.png?_nc_cat=100&_nc_oc=AQnMH-7CXcK8BUprRJcZZGDclHor84tEFebB0eAQ4SAH0ZLgHm--sOAYIb5CqH07Xac&_nc_ht=scontent.fnqn2-2.fna&oh=f2dd915eba0441965143ee9d6a664531&oe=5DBA4AF6" 
+    <img src="assets/imagenes/hamburbarco.png"  
     height="20%" width="20%"
+    [ngStyle]="{'heigth':hamburguesa ? '6.5%' :'20%', 'width':hamburguesa ? '6.5%':'20%', 'margin-left':hamburguesa ? '90%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
     alt="logoBV">
   </a>
 
@@ -24,7 +25,7 @@
     <ul class="navbar-nav mr-auto">
      
       <li class="nav-item dropdown">
-          <hr class="celeste mb-3">
+          <hr class="celeste mb-3"  [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  routerLinkActive="active">
           PRODUCTOS
         </a>
@@ -38,26 +39,26 @@
       </li>
       <li class="nav-item">
 
-          <hr class="amarillo mb-3">
+          <hr class="amarillo mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
         <a class="nav-link" href="#recetas"  routerLinkActive="active" >RECETAS</a>
 
       </li>
       <li class="nav-item">
-          <hr class="violeta mb-3">
+          <hr class="violeta mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
         <a class="nav-link" href="#nosotros"   routerLinkActive="active" >NOSOTROS</a>
       </li>
       <li class="nav-item">
-          <hr class="verde mb-3">
+          <hr class="verde mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
         <a class="nav-link" href="#contacto"  routerLinkActive="active" >CONTACTO</a>
       </li>
     
-      <li  class="nav-item">
+      <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
 
 
-          <hr class="naranja mb-3">
+          <hr class="naranja mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
           <form class="form-inline">
     
-            <input class="form-control" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;">
+            <input class="form-control" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
          
          
           </form>
