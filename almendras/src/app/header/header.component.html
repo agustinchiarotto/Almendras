@@ -13,6 +13,7 @@
   </a>
 
   <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+ 
      style="position: absolute;
      right: inherit;" >
     <span class="navbar-toggler-icon"></span>
@@ -26,14 +27,14 @@
      
       <li class="nav-item dropdown">
           <hr class="celeste mb-3"  [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  routerLinkActive="active">
+        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  routerLinkActive="active">
           PRODUCTOS
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Dulces</a>
-          <a class="dropdown-item" href="#">Salados</a>
-          <a class="dropdown-item" href="#">Naturales</a>
-          <a class="dropdown-item" href="#">Todos</a>
+        <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#dulces">Dulces</a>
+          <a class="dropdown-item" href="#salados" >Salados</a>
+          <a class="dropdown-item" href="#naturales" >Naturales</a>
+          <a class="dropdown-item" href="#productos" >Todos</a>
           
         </div>
       </li>
@@ -45,11 +46,11 @@
       </li>
       <li class="nav-item">
           <hr class="violeta mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
-        <a class="nav-link" href="#nosotros"   routerLinkActive="active" >NOSOTROS</a>
+        <a class="nav-link" href="#nosotros"    routerLinkActive="active" >NOSOTROS</a>
       </li>
       <li class="nav-item">
           <hr class="verde mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
-        <a class="nav-link" href="#contacto"  routerLinkActive="active" >CONTACTO</a>
+        <a class="nav-link" href="#contacto"   routerLinkActive="active" >CONTACTO</a>
       </li>
     
       <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
@@ -84,3 +85,4 @@
     </button>
   </nav>
 </div> -->
+
