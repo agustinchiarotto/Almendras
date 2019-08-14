@@ -1,26 +1,63 @@
 .trama
 {
-    background-image: url('src/assets/imagenes/contacto/fondocontacto.png');
-    background-repeat: no-repeat;
-    //background-position: center center;
-    //background-attachment: fixed; permite que el back sea scroll
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
+    background: url('src/assets/imagenes/contacto/fondocontacto.png');
+    background-repeat: no-repeat;    
+    background-position: center center;
+    //background: fixed;
+    //background-attachment: scroll; //permite que el back sea scroll
+    background-size: cover; 
+    //position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+
+    /* background: url('src/assets/imagenes/contacto/fondocontacto.png') no-repeat  center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100% ;
+    text-align: center; */
+
+
+    
+    
     
     
 }
+.tituloMensaje{
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 52px;
+    color: rgb(212, 154, 7);
+    margin-top: 20%;
+  }
+
+  .textoMensaje{
+    font-family: "Montserrat-Light";
+    font-size: 22px;
+    line-height: 1.7;
+    color: white;
+  }
 .contact
 {
     padding: 5vh;
     //position: center;
 }
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
+.formu
+{
+    margin-top: 20%;
+    margin-bottom: 40%;
+    //margin-left: 7%;
+    margin-right: 5%
 }
-.nombre
+.posbuton
+{
+    text-align-last: right;
+    
+}
+/* .nombre
 {
     background-image: url('src/assets/imagenes/contacto/nombre.png');
     background-repeat: no-repeat;
@@ -67,7 +104,7 @@
     background-size: 100% 100%; 
     width:100%;
     max-height: 100%;
-}
+} */
 
 
 .bigicon {
@@ -78,7 +115,8 @@
 @media screen and (max-width: 414px) {
   .trama
 {
-  
+  background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+  background-size:center center;
   width:100%;
   max-height: 100%;
   

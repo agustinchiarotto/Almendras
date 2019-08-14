@@ -10,7 +10,7 @@ h1{
 
 hr.new4 {
     width: 30%;
-    border: 3.5px solid rgba(143, 106, 85, 1);
+    border: 3.5px solid rgb(237, 166, 93);
     
   }
 
@@ -65,7 +65,44 @@ hr.new4 {
     max-width:70%;
     max-height: 45%;
   }
+  .tituloConocenos
+  {
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 51px;
+    color: rgb(119,87,70)
+  }
+  .tituloTexto
+  {
+    font-family: "Monserrat-Semibold";
+    font-size: 23px;
+    color: rgb(237,196,93);
 
+   
+  }
+  .texto1
+  {
+    font-family: "Monserrat-Regular";
+    font-size: 14px;
+    color: rgb(119,87,70);
+  }
+.texto2
+{
+  margin-top: 5px;
+  font-family: "Monserrat-Light";
+  font-size: 12px;
+  color: rgb(119,97,70);
+}
+.texto3
+{
+  
+  font-family: "Monserrat-Semibold";
+  font-size: 13px;
+  color: rgb(119,97,70);
+}
+.fondo
+{
+  background-color: rgb(241,232,227)
+}
 
 
 
