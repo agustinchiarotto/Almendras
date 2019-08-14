@@ -44,26 +44,27 @@ export class HeaderComponent implements OnInit {
   prevScrollpos = window.pageYOffset;
   hamburguesa:boolean=false;
   armado:boolean=false;
-  constructor() { 
-
-  }
-
+  hizoClick:boolean=false;
+  constructor(@Inject(DOCUMENT) document) {
+    
+ }
   ngOnInit() {
     this.hamburguesa=false;
   }
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-
+    this.hizoClick=true;
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     if (number < 300 ) {
         this.hamburguesa=false;
-        console.log(this.hamburguesa)
+      //  console.log(this.hamburguesa)
     }
     if (number > 300) {
       this.hamburguesa=true;
-      console.log('You are 100px from the top to bottom ' + this.hamburguesa);
+      //console.log('You are 100px from the top to bottom ' + this.hamburguesa);
     }
+    document.getElementById('navbarSupportedContent').classList.remove('show');
   }
 
   mouseEnter(){
@@ -72,5 +73,6 @@ export class HeaderComponent implements OnInit {
   mouseLeave(){
     this.armado=true;
   }
+
 
 }
