@@ -15,7 +15,7 @@ hr.new4 {
 
   hr.new2 {
     width: 20%;
-    border: 3.5px solid #82AA52;
+    border: 3.5px solid rgb(182, 219, 189);;
     background-color: black;
   }
 
@@ -32,11 +32,11 @@ hr.new4 {
 }
 
 .fondoAmarillo{
-  background-color: #F0C658;
+  background-color: rgb(237, 209, 133);
 }
 
 .fondoVerde{
-  background-color: #82AA52;
+  background-color: rgb(182, 219, 189);
 }
 
 * {
@@ -87,12 +87,51 @@ hr.new4 {
   
 }
 
+.tituloDulce{
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 67px;
+  color: rgb(87, 154, 160);
+  
+}
+.tituloSalado{
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 67px;
+  color: rgb(179, 85, 42); 
+  
+}
+.tituloNaturales{
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 67px;
+  color: rgb(83, 105, 26); 
+  
+}
+.tituloHarina{
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 67px;
+  color: rgb(179, 85, 42); 
+  
+}
+
 .textoConocenos{
   font-family: "Montserrat-Light";
   font-size: 14px;
   line-height: 1.7;
 }
 
+.textoProductos{
+  font-family: "Montserrat-Thin";
+  font-size: 19px;
+  margin: 0%;
+ // line-height: 2;
+}
+
+
+
+.textoProductosNegrita  {
+  font-family: "Montserrat-Light";
+  font-size: 19px;
+ // line-height: 2;
+}
 
 
 /* .w3-container{

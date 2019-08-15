@@ -43,70 +43,73 @@ export class ProductosComponent implements OnInit {
 
 salados = [{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'AHUMADAS',
+  imagen: '../../assets/imagenes/productos/saladas_ahumadas.jpg' 
 },
 {
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'CON OLIVA',
+  imagen: '../../assets/imagenes/productos/saladas_oliva.jpg' 
 },{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'CON PIMENTON',
+  imagen: '../../assets/imagenes/productos/saladas_pimenton.jpg' 
 },{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'CON ROMERO',
+  imagen: '../../assets/imagenes/productos/saladas_romero.jpg' 
 },{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'TOSTADAS',
+  imagen: '../../assets/imagenes/productos/saladas_tostadas.jpg' 
 },{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'CON WASABI',
+  imagen: '../../assets/imagenes/productos/saladas_wasabi.jpg' 
 },
 ];
 
 naturales = [{
+  nombre: 'AVELLANAS',
+  negrita: '',
+  imagen: '../../assets/imagenes/productos/naturales_avellanas.jpg' 
+},
+{
+  nombre: 'NUECES',
+  negrita: '',
+  imagen: '../../assets/imagenes/productos/naturales_nueces.jpg' 
+},{
+  nombre: 'MIX',
+  negrita: '',
+  imagen: '../../assets/imagenes/productos/naturales_mix.jpg' 
+},{
+  nombre: 'PASAS',
+  negrita: '',
+  imagen: '../../assets/imagenes/productos/naturales_pasas.jpg' 
+},{
+  nombre: 'TOSTADAS',
+  negrita: 'A GRANEL',
+  imagen: '../../assets/imagenes/productos/naturales_tostadas_granel.jpg' 
+},{
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'FILETEADAS',
+  imagen: '../../assets/imagenes/productos/naturales_alm_fileteadas.jpg' 
 },
 {
   nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
-},{
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
-},{
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
-},{
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
-},{
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
-},
-];
-
-harinas = [{
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  negrita: 'ENTERAS',
+  imagen: '../../assets/imagenes/productos/naturales_almendras_enteras.jpg' 
 },
 {
-  nombre: 'ALMENDRAS',
-  negrita: 'CON CHOCOLATE',
-  imagen: '../../assets/imagenes/caja_avellanas_chocolate.png' 
+  nombre: 'HARINA',
+  negrita: 'HARINA 000',
+  imagen: '../../assets/imagenes/productos/naturales_harina01.jpg'
 },
+{
+  nombre: 'HARINA',
+  negrita: 'HARINA 0000',
+  imagen: '../../assets/imagenes/productos/naturales_harina_02.jpg' 
+}
 ];
 
   ngOnInit() {
