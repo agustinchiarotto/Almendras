@@ -112,6 +112,26 @@
     color: #36A0FF;
 }
 
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+ 
+    text-align: center;
+
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 73%;
+    max-height: 94%
+  }
+
+
 @media screen and (max-width: 414px) {
   .trama
 {
