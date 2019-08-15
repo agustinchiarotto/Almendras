@@ -63,7 +63,7 @@
   <h2 class="text-center textoProductosNegrita" style="max-width: 100%; color: black; font-size: 20px">Tardes tentadoras</h2>
     <div id="parent">
       <div class="child" *ngFor="let dulce of dulces">
-          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '60%' :'100%'}">
+          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '60%' :'100%'}" (mouseenter) ="mouseEnter(dulce)"  (mouseleave) ="mouseLeave(dulce) ">
           <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; font-size: 20px">
             {{dulce.nombre}}</h2>
           <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">
@@ -81,7 +81,9 @@
   <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
     <div id="parent">
       <div class="child" *ngFor="let salado of salados">
-          <img class="center" src="{{salado.imagen}}" alt="imagen" width="500px">
+          <img class="center" 
+         
+          src="{{salado.imagen}}" alt="imagen" width="500px" (mouseenter) ="mouseEnter(salado)"  (mouseleave) ="mouseLeave(salado)" >
           <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; ; font-size: 20px">
             {{salado.nombre}}</h2>
           <h2 class="text-center textoProductosNegrita" style="max-width: 100% ; font-size: 20px">
@@ -99,7 +101,7 @@
   <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
     <div id="parent">
       <div class="child" *ngFor="let natural of naturales">
-          <img class="center" src="{{natural.imagen}}" alt="imagen" width="500px">
+          <img class="center" src="{{natural.imagen}}" alt="imagen" width="500px" (mouseenter) ="mouseEnter(natural)"  (mouseleave) ="mouseLeave(natural)" >
           <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal;; font-size: 20px">
             {{natural.nombre}}</h2>
           <h2 class="text-center textoProductosNegrita" style="max-width: 100%; ; font-size: 20px">
