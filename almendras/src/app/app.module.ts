@@ -13,8 +13,16 @@ import { RecetasComponent } from './recetas/recetas.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
+import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+
+
+import {ContactoService } from './contacto/contacto.service'
+
 
 import { AgmCoreModule } from '@agm/core';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -28,7 +36,7 @@ import { AgmCoreModule } from '@agm/core';
     GoogleMapComponent,
     NosotrosComponent
   ],
-  imports: [
+  imports: [FormsModule ,HttpModule,    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
@@ -36,7 +44,8 @@ import { AgmCoreModule } from '@agm/core';
       apiKey: 'AIzaSyCiUl0t3_wkX1n_bRWaUhsKrPoQKucR9co'
     }),
   ],
-  providers: [],
+  providers: [ContactoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

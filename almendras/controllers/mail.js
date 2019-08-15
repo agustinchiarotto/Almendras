@@ -5,10 +5,14 @@ var nodemailer = require('nodemailer');
 
 function sendMail (req, res){
   var params = req.body
-  var emisor = params.email
-  var destinatario = params.destino
-  var asunto = "Comentario de "+ params.name + " enviado desde la app"
-  var texto = "Nombre: " + params.name + "\n\nEmail: " + params.email + "\n\nComentario: " + params.text
+  var emisor = 'COMPLETAR CON EL MAIL DE EMISOR'
+  var destinatario = params.email
+  var asunto = "Contacto de "+ params.nombre + " enviado desde buenosvientos.com"
+  var texto = "Nombre: " + params.nombre + "\n Apellido: " + params.apellido +
+   "\n Email: " + params.email +
+   "\n Telefono: " + params.telefono +
+   "\n Localidad: " + params.localidad +
+  "\n Mensaje: " + params.mensaje
   var mailOptions = {
     from: emisor,
     to: destinatario,
