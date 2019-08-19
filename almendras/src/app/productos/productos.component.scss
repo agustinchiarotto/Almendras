@@ -126,12 +126,29 @@ hr.new4 {
  // line-height: 2;
 }
 
+.textoMarron{
+  font-family: 'Montserrat-Black';
+  color: rgb(179, 85, 42); 
+  font-size: 26px
+}
+
 
 
 .textoProductosNegrita  {
   font-family: "Montserrat-Light";
   font-size: 19px;
  // line-height: 2;
+}
+
+.cuadradoMarron {
+
+  width: 60vw;
+  height: 20vw;
+ 
+  background: url('src/assets/imagenes/productos/pastilla.png');
+  background-repeat: no-repeat;    
+    background-position: center center;
+  background-size: 100%; 
 }
 
 
