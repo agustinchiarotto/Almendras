@@ -1,5 +1,5 @@
 <section>
-<div class="w3-container m-1 align-items-center " style="display:table-row;max-width: 100%;">
+<div class="w3-container m-1 align-items-center " style="max-width: 100%;">
 
 
   <div class="container" id="productos">
@@ -53,72 +53,75 @@
   </div>
 </div>
 </div>
-<div class="w3-container m-1 align-items-center fondoMarron" style="display:table-row; max-width: 100%; height: 2em;">
+<div class="w3-container m-1 align-items-center fondoMarron" style=" max-width: 100%; height: 2em;">
   <h1></h1>
 </div>
-<div class="w3-container m-1 align-items-center" id="dulces" style="display:table-row; max-width: 100%;">
-  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+<div class="w3-container m-1 align-items-center" id="dulces" style=" max-width: 100%;">
+  <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
     Dulces
   </h1>
-  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Tardes tentadoras</h2>
+  <h2 class="text-center textoProductosNegrita" style="max-width: 100%; color: black; font-size: 20px">Tardes tentadoras</h2>
     <div id="parent">
       <div class="child" *ngFor="let dulce of dulces">
-          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '60%' :'100%'}">
-          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '50%' :'80%'}" (mouseenter) ="mouseEnter(dulce)"  (mouseleave) ="mouseLeave(dulce) ">
+          <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; font-size: 20px">
             {{dulce.nombre}}</h2>
-          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+          <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">
             {{dulce.negrita}}</h2>
       </div>
     </div>
 </div>
-<div class="w3-container m-1 align-items-center fondoAmarillo" style="display:table-row; max-width: 100%; height: 2em;">
+<div class="w3-container m-1 align-items-center fondoAmarillo" style=" max-width: 100%; height: 2em;">
   <h1></h1>
 </div>
-<div class="w3-container m-1 align-items-center" id="salados" style="display:table-row; max-width: 100%;">
-  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+<div class="w3-container m-1 align-items-center" id="salados" style=" max-width: 100%;">
+  <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
     Salados
   </h1>
-  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Deliciosos encuentros</h2>
+  <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
     <div id="parent">
       <div class="child" *ngFor="let salado of salados">
-          <img class="center" src="{{salado.imagen}}" alt="imagen" width="500px">
-          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+          <img class="center" 
+         
+          src="{{salado.imagen}}" alt="imagen" width="80%" (mouseenter) ="mouseEnter(salado)"  (mouseleave) ="mouseLeave(salado)" >
+          <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; ; font-size: 20px">
             {{salado.nombre}}</h2>
-          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+          <h2 class="text-center textoProductosNegrita" style="max-width: 100% ; font-size: 20px">
             {{salado.negrita}}</h2>
       </div>
     </div>
 </div>
-<div class="w3-container m-1 align-items-center fondoVerde" style="display:table-row; max-width: 100%; height: 2em;">
+<div class="w3-container m-1 align-items-center fondoVerde" style=" max-width: 100%; height: 2em;">
   <h1></h1>
 </div>
-<div class="w3-container m-1 align-items-center" id="naturales" style="display:table-row; max-width: 100%;">
-  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+<div class="w3-container m-1 align-items-center" id="naturales" style=" max-width: 100%;">
+  <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
     Naturales
   </h1>
-  <h2 class="text-center" style="max-width: 100%; color: #472f24; font-size: 20px">Sabor y equilibrio natural</h2>
+  <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
     <div id="parent">
       <div class="child" *ngFor="let natural of naturales">
-          <img class="center" src="{{natural.imagen}}" alt="imagen" width="500px">
-          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+          <img class="center" src="{{natural.imagen}}" alt="imagen" width="80%" (mouseenter) ="mouseEnter(natural)"  (mouseleave) ="mouseLeave(natural)" >
+          <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal;; font-size: 20px">
             {{natural.nombre}}</h2>
-          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+          <h2 class="text-center textoProductosNegrita" style="max-width: 100%; ; font-size: 20px">
             {{natural.negrita}}</h2>
       </div>
     </div>
 </div>
-<div class="w3-container m-1 align-items-center" style="display:table-row; max-width: 100%;">
-  <h1 class="text-center mt-5 " style="max-width: 100%; color: #472f24">
+<!-- <div class="w3-container m-1 align-items-center" style="max-width: 100%;">
+  <h1 class="text-center mt-5 tituloHarina" style="max-width: 100%;">
     Harinas
   </h1>
   <hr class="new2">
     <div id="parent">
       <div class="child" *ngFor="let harina of harinas">
           <img class="center" src="{{harina.imagen}}" alt="imagen" width="500px">
-          <h2 class="text-center" style="max-width: 100%; font-weight: normal; color: #472f24; font-size: 20px">
+          <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; font-size: 20px">
             {{harina.nombre}}</h2>
-          <h2 class="text-center" style="max-width: 100%; font-weight: bold; color: #472f24; font-size: 20px">
+          <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">
             {{harina.negrita}}</h2>
       </div>
     </div>
-</div></section>
+</div> -->
+</section>
