@@ -31,3 +31,68 @@
     font-size: 18px;
     color: rgb(255 ,255,255);
 }
+.verTodo
+{
+    font-family: "Montserrat-SemiBold";
+    font-size: 10px;
+    line-height:30px;
+}
+.tiempo
+{
+    text-align: center;
+}
+.coccion
+{
+    text-align: end;
+ 
+}
+
+
+@media screen and (max-width: 414px) {
+   
+.col-8
+{
+    display: none;
+}
+.col-12
+{
+    align-items: center;
+}
+
+.celular
+{
+    .tituloTexto
+{
+   
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 57px;
+    color: rgb(255 ,255,255);
+    text-align: center;
+
+}
+.texto1
+{
+    margin-top: 5%;
+    font-family: "Montserrat-SemiBold";
+    font-size: 22px;
+    color: rgb(255 ,255,255);
+    text-align: center;
+}
+.texto2
+{
+    margin-top: 7%;
+    font-family: "Montserrat-Light";
+    font-size: 18px;
+    color: rgb(255 ,255,255);
+    text-align: center;
+}
+.verTodo
+{
+    font-family: "Montserrat-SemiBold";
+    font-size: 10px;
+    line-height:30px;
+    text-align: center;
+}
+}
+}
+  

@@ -16,6 +16,8 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+import {ButtonModule} from 'primeng/button';
+
 
 
 import {ContactoService } from './contacto/contacto.service'
@@ -40,6 +42,7 @@ import { from } from 'rxjs';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ButtonModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCiUl0t3_wkX1n_bRWaUhsKrPoQKucR9co'
     }),

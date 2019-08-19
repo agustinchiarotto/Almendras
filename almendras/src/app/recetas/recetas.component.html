@@ -1,8 +1,8 @@
 <section id="recetas">
-<div class="w3-container m-5 align-items-center" style="display: inherit;">
-  <div class="row resetas-section">
-    <div class="col-8 fondoMarron">
-      <div id="recipeCarousel" class="carousel slide w-100  fondoRosa" data-ride="carousel">
+<div class="w3-container align-items-center resetas-section" style="display: inherit;">
+  <div class="row ">
+    <div class="col-8 cel">
+      <div id="recipeCarousel" class="carousel slide w-100  " data-ride="carousel">
         <div class="carousel-inner w-100" role="listbox">
           <div class="carousel-item row no-gutters active ">
             <div class="col-6 float-left">
@@ -15,11 +15,11 @@
                     <div class="col-6">
                       <h5><strong>Macarrones de Frambuesa</strong></h5>
                     </div>
-                    <div class="col-3" style="text-align: center;">
+                    <div class="col-3 tiempo">
                       <i class="fas fa-clock fa-2x"></i>
                       <p style="font-size: 11px"><strong>40min</strong></p>
                     </div>
-                    <div class="col-3" style="text-align: center;">
+                    <div class="col-3 coccion" >
                       <i class="fas fa-cheese fa-2x"></i>
                       <p style="font-size: 11px"><strong>Dificil</strong></p>
                     </div>
@@ -27,7 +27,7 @@
                 </div>
               </div>
             </div>
-            <br>
+            
             <div class="col-6 float-left">
               <div class="card">
                 <img class="card-img-top"
@@ -38,11 +38,11 @@
                     <div class="col-6">
                       <h5><strong>Macarrones de Frambuesa</strong></h5>
                     </div>
-                    <div class="col-3" style="text-align: center;">
+                    <div class="col-3 tiempo">
                       <i class="fas fa-clock fa-2x"></i>
                       <p style="font-size: 11px"><strong>40min</strong></p>
                     </div>
-                    <div class="col-3" style="text-align: center;">
+                    <div class="col-3 coccion" >
                       <i class="fas fa-cheese fa-2x"></i>
                       <p style="font-size: 11px"><strong>Dificil</strong></p>
                     </div>
@@ -62,11 +62,20 @@
         </a>
       </div>
     </div>
-    <div class="col-3">
+    <div class="col-3" [ngClass]="{'col-12 celular':receta }">
+      <div>
+        
+      </div>
       <p class="tituloTexto">Recetas</p>
       <p class="texto1">¡Con almendras se puede preparar todo tipo de platos, ya sean dulces o salados!</p>
       <p class="texto2">Los frutos secos son un gran aliado en la cocina, las alemndras probablemente sean los grandes protagonistas de grandes platos como los que esncontrarás aqui. </p>
+      <div class="verTodo" >
+        <button pButton type="button" label="VER TODAS" class="ui-button-raised ui-button-secondary"></button>
+    </div>
     </div>
   </div>
 </div>
 </section>
+
+
+
