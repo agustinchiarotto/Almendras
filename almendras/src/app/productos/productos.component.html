@@ -71,18 +71,19 @@
      
 
        
-      <div class="child" *ngFor="let dulce of dulces" >
-
-
+      <div class="child" *ngFor="let dulce of dulces;let i = index" 
+      [ngStyle]="{'margin-right': i==4 ? '15%' :'0%','margin-left': i==3 ? '15%' :'0%'}"
+      >
            
         
 
-          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '50%' :'80%'}" 
+          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '70%' :'80%'}" 
           (mouseenter) ="mouseEnter(dulce)"  (mouseleave) ="mouseLeave(dulce) "
           (click)="onclickDulce(dulce)"
           
           >
           <h2 class="text-center textoProductos" style="max-width: 100%; font-weight: normal; font-size: 20px">
+          
             {{dulce.nombre}}</h2>
           <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">
             {{dulce.negrita}}</h2>

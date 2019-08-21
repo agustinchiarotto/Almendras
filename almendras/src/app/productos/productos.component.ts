@@ -270,5 +270,17 @@ devolverImagen(producto:any){
    this.mostrarSalados=false;
  }
 
+ estilo(i:number){
+   let r="";
+    if(i==3){
+      r="{margin-left:15%}"
+   }
+   if(i==4){
+    r="{margin-rigth:15%}"
+ }
+
+   return r;
+ }
+
   
 }
