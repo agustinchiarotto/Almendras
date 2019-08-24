@@ -8,8 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class GoogleMapComponent implements OnInit {
 
   constructor() { }
+  mapa:boolean=false;
+  ancho:any;
 
   ngOnInit() {
+
+    this.ancho=window.innerWidth;
+    
+    if(this.ancho<414)
+    {
+      this.mapa=true;
+    }
   }
   
 

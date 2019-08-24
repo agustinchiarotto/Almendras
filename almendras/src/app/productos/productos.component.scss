@@ -175,5 +175,13 @@ hr.new4 {
       margin: 0%;
      // line-height: 2;
     }
+
+    #parent {
+      margin-left: 5vh;
+      margin-right: 5vh;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10vh;
+    }
   
 }
