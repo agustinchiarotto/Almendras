@@ -9,6 +9,7 @@
     //position: absolute;
     width: 100%;
     height: 100%;
+    max-width: 100%;
 
 
 
@@ -131,22 +132,81 @@
     max-height: 94%
   }
 
-
+//para trabajo responsive usar min-width. Hay q definir uno por cada tamaño del mas chico al mas grande
+//pedirle a las chicas la imagen en la medida necesaria. De otra forma siempre se va a deformar.
 @media screen and (max-width: 414px) {
   .trama
 {
   background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
-  background-size:center center;
-  width:100%;
+  
+  background-size: contain;
+  background-position: center center;
+  
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  height: auto;
   max-height: 100%;
+  z-index: 1;
   
 }
-
+.trama1
+{
+    //background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+    background-color: rgb(77, 79, 80);
+    background-size: cover;
+    z-index: 0;
+}
+.celular
+{
+    align-content: inherit;
+}
 
 .tituloMensaje{
     font-family: "PlayfairDisplay-Bold";
     font-size: 22px;
     color: rgb(212, 154, 7);
     margin-top: 20%;
+    padding-left: 10%;
   }
+
+.nombreimg
+{
+    display: none;
+}
+.apellido
+{
+    display: none
+}
+.email
+{
+    display: none
+}
+.localidad
+{
+    display: none
+}
+.telefono
+{
+    display: none
+}
+.mensaje
+{
+    display: none
+}
+.textoMensaje{
+    font-family: "Montserrat-Light";
+    font-size: 15px;
+    line-height: 1.7;
+    color: white;
+    padding-left: 10%;
+  }
+  .formu
+{
+    margin-top: 20%;
+    margin-bottom: 40%;
+    //margin-left: 7%;
+    margin-right: 10%
+}
+
 }

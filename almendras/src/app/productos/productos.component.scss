@@ -159,3 +159,21 @@ hr.new4 {
 
     montserrat ligth interlineado 17 tama;o 14 bajar en nuestros
   } */
+
+
+  @media only screen and (max-width: 415px) {
+   
+    .textoProductosNegrita  {
+      font-family: "Montserrat-Light";
+      font-size: 10px;
+     // line-height: 2;
+    }
+
+    .textoProductos{
+      font-family: "Montserrat-Thin";
+      font-size: 10px;
+      margin: 0%;
+     // line-height: 2;
+    }
+  
+}

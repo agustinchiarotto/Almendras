@@ -11,6 +11,8 @@ export class ContactoComponent implements OnInit {
 
 
   model: any = {};
+  conta:boolean=false;
+  ancho:any;
 
   constructor(
     private contactoService:ContactoService
@@ -19,6 +21,13 @@ export class ContactoComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    this.ancho=window.innerWidth;
+    
+    if(this.ancho<414)
+    {
+      this.conta=true;
+    }
   }
 
 
