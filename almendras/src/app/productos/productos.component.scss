@@ -145,11 +145,25 @@ hr.new4 {
 
   width: 60vw;
   height: 20vw;
- 
+ animation-name: fadeInRight;
+ animation-duration: 0.8s;
+ animation-play-state: running;
+
+
+
+
   background: url('src/assets/imagenes/productos/pastilla.png');
   background-repeat: no-repeat;    
     background-position: center center;
   background-size: 100%; 
+}
+
+
+
+
+@keyframes example {
+  from {display:block;}
+  to {display:none;}
 }
 
 

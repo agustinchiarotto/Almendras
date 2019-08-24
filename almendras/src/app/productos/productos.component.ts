@@ -9,6 +9,7 @@ export class ProductosComponent implements OnInit {
 
   constructor() { }
 
+  movil:boolean = false;
   mostrarDulces:boolean = false;
   mostrarNaturales:boolean = false;
   mostrarSalados:boolean = false;
@@ -197,6 +198,11 @@ naturales = [{
 ];
 
   ngOnInit() {
+
+    if(window.innerWidth<414){
+      this.movil=true;
+    }
+
   }
 
 
