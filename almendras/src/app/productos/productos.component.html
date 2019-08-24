@@ -5,15 +5,15 @@
   <div class="container" id="productos">
   <div class="row m-4 justify-content-md-center">
 
-    <div class="col center">
+    <div class="col center nopadding">
       <img src="assets/imagenes/conocenostop1.jpg"  alt="">
     </div>
 
-    <div class="col center">
+    <div class="col center nopadding">
       <img src="assets/imagenes/conocenostop2.jpg"  alt="">
     </div>
 
-    <div class="col center">
+    <div class="col center nopadding">
       <img src="assets/imagenes/conocenostop3.jpg" alt="">
     </div>
 
@@ -72,12 +72,12 @@
 
        
       <div class="child" *ngFor="let dulce of dulces;let i = index" 
-      [ngStyle]="{'margin-right': i==4 ? '15%' :'0%','margin-left': i==3 ? '15%' :'0%'}"
+      [ngStyle]="{'margin-right': i==4  && !movil ? '15%' :'0%','margin-left': i==3 && !movil ? '15%' :'0%'}"
       >
            
         
 
-          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size ? '70%' :'80%'}" 
+          <img class="center" src="{{dulce.imagen}}" alt="imagen"  [ngStyle]="{'width': dulce.size && !movil ? '70%' :'80%'}" 
           (mouseenter) ="mouseEnter(dulce)"  (mouseleave) ="mouseLeave(dulce) "
           (click)="onclickDulce(dulce)"
           
@@ -103,10 +103,10 @@
  
    
  
-<div  [ngStyle] = "{'display': dulce.click ? 'block':'none'}">
+<div  [ngStyle] = "{'display': dulce.click ? 'block':'none'}" style="    margin-bottom: 4%;">
     <div class="cuadradoMarron float-right mt-3" >
 
-        <button type="button" class="close" aria-label="Close" 
+        <button type="button" class="close closes" aria-label="Close" 
         (click)="cerrarMarron()" style=" font-size: 40px;">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -188,7 +188,7 @@
  
    
  
-<div  [ngStyle] = "{'display': salado.click ? 'block':'none'}">
+<div  [ngStyle] = "{'display': salado.click ? 'block':'none'}" style="    margin-bottom: 4%;">
     <div class="cuadradoMarron float-right mt-3" >
 
         <button type="button" class="close" aria-label="Close" 
@@ -253,8 +253,10 @@
   <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
   <div id="parent" *ngIf="!mostrarNaturales">
       <div class="child" *ngFor="let natural of naturales">
-          <img class="center" src="{{natural.imagen}}" alt="imagen" width="80%" (mouseenter) ="mouseEnter(natural)"  (mouseleave) ="mouseLeave(natural)" 
+          <a href=#naturales>
+        <img class="center" src="{{natural.imagen}}" alt="imagen" width="80%" (mouseenter) ="mouseEnter(natural)"  (mouseleave) ="mouseLeave(natural)" 
           (click)="onclickNaturales(natural)">
+      </a>
           <h2 class="text-center textoProductos" >
             {{natural.nombre}}</h2>
           <h2 class="text-center textoProductosNegrita" >
@@ -274,7 +276,7 @@
  
    
  
-<div  [ngStyle] = "{'display': natural.click ? 'block':'none'}">
+<div  [ngStyle] = "{'display': natural.click ? 'block':'none'}" style="    margin-bottom: 4%;">
     <div class="cuadradoMarron float-right mt-3" >
 
         <button type="button" class="close" aria-label="Close" 
@@ -293,17 +295,19 @@
             {{natural.nombre}}
             {{natural.negrita}}
         </h2>
-        <div class="col-lg-2 mt-5">
-            <img src="{{natural.imagenCE}}" 
-            alt="">
+     
+
+        <h3 style="color: white;font-size:14px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h3>
       </div>
 
-      </div>
-
         <div class="col-lg-2 mt-5">
+
+            <div class="col-lg-2 mt-5">
+                <img src="{{natural.imagenCE}}" 
+                alt="">
+          </div>
                      
-<h3 style="color: white;font-size:14px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </h3>
         </div>
 
      </div>
