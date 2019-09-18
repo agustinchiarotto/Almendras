@@ -23,6 +23,7 @@ export class ContactoService {
         telefonoC: string,
         localidadC: string,
         mensajeC: string){
+            console.log("Enviar mail de servicio");
         return this.http.post(this.contactoURL,
             JSON.stringify({
                 nombre: nombreC, apellido: apellidoC,

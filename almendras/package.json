@@ -27,6 +27,7 @@
     "nodemailer": "^6.3.0",
     "primeng": "^8.0.2",
     "rxjs": "~6.3.3",
+    "server": "^1.0.19",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
