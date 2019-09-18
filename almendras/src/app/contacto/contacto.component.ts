@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ContactoService } from "./contacto.service";
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contacto',
@@ -40,6 +41,16 @@ export class ContactoComponent implements OnInit {
     +this.model.email
     );
     this.contactoService.enviarMail(this.model.nombre,this.model.apellido,this.model.email,this.model.tel,this.model.localidad,this.model.mensaje)
+
+    Swal.fire({
+      title: 'Muchas Gracias!',
+      text: 'Se ha enviado un mensaje. Pronto nos contactaremos con vos!',
+      type: 'success',
+      showConfirmButton: false,
+      timer: 3200
+    });
+
+    f.resetForm();
 
   }
 

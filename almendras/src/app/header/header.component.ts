@@ -10,6 +10,7 @@ import {
   // ...
 } from '@angular/animations';
 import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
+import { NgForm } from '@angular/forms';
 
 
 
@@ -41,6 +42,7 @@ import { NONE_TYPE } from '@angular/compiler/src/output/output_ast';
   ]
 })
 export class HeaderComponent implements OnInit {
+  model: any = {};
   prevScrollpos = window.pageYOffset;
   hamburguesa:boolean=false;
   armado:boolean=false;
@@ -74,5 +76,9 @@ export class HeaderComponent implements OnInit {
     this.armado=true;
   }
 
+buscar(){
+  console.log(this.model.busqueda);
+  window.location.href = 'http://www.google.com/search?q=site:buenosvientos.com.ar ' + this.model.busqueda;
+}
 
 }

@@ -59,7 +59,14 @@
           <hr class="naranja mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
           <form class="form-inline">
     
-            <input class="form-control" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
+            <input class="form-control" name="busqueda" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" 
+            [(ngModel)]="model.busqueda" required
+            autocomplete="false"
+            autofocus="false"
+            (submit)="buscar()"
+            (keydown.enter)="buscar()"
+        
+            >
          
          
           </form>
