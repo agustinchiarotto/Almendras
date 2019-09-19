@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
+  nosotros:boolean=false;
+  ancho:any;
+
   constructor() { }
 
   ngOnInit() {
+
+    this.ancho=window.innerWidth;
+    console.log("El ancho es: "+this.ancho);
+    if(this.ancho<414)
+    {
+        this.nosotros=true;
+    }
   }
   
 

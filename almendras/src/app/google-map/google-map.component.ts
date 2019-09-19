@@ -10,6 +10,7 @@ export class GoogleMapComponent implements OnInit {
   constructor() { }
   mapa:boolean=false;
   ancho:any;
+  celular:boolean = false;
 
   ngOnInit() {
 
@@ -18,6 +19,7 @@ export class GoogleMapComponent implements OnInit {
     if(this.ancho<414)
     {
       this.mapa=true;
+      this.celular=true;
     }
   }
   

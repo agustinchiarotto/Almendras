@@ -179,12 +179,13 @@ hr.new5 {
   {
     display: none;
   }
-  .aux2
+   .aux2
   {
-    text-align: center;
+    text-align: left;
     padding-left: 40px;
+    max-width: 50%;
    
-  }
+  } 
 
   .tituloConocenos
   {
@@ -220,6 +221,13 @@ hr.new5 {
   font-family: "Montserrat-SemiBold";
   font-size: 15px;
   color: rgb(119,97,70);
+}
+
+.col-12
+{
+   // align-items: center;
+    padding-left: 30px;
+    max-width: 100%;
 }
 }
 
