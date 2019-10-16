@@ -5,10 +5,10 @@ var nodemailer = require('nodemailer');
 
 function sendMail (req, res){
   var params = req.body
-  var emisor = params.email
-  var destinatario = params.destino
-  var asunto = "Comentario de "+ params.name + " enviado desde la app"
-  var texto = "Nombre: " + params.name + "\n\nEmail: " + params.email + "\n\nComentario: " + params.text
+  var emisor = params.email // aca va el mail del comentario
+  var destinatario = params.email // aca va el mail de buenos vientos
+  var asunto = "Comentario de "+ params.nombre+" "+params.apellido + " enviado desde la app"
+  var texto = "Nombre: " + params.nombre+" "+params.apellido + "\n\nEmail: " + params.email + "\n\nComentario: " + params.mensaje
   var mailOptions = {
     from: emisor,
     to: destinatario,
@@ -42,7 +42,7 @@ function sendMail (req, res){
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'api.ciudadmujer@gmail.com',
+      user: 'api.ciudadmujer@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE BUENO 
       pass: 'maokai.1/12',
     }
   })

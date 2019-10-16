@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 
 import { ContactoComponent } from './contacto.component';
+import { Mail } from './mail';
 
 
 
@@ -29,7 +30,12 @@ export class ContactoService {
                 nombre: nombreC, apellido: apellidoC,
                 email: emailC, telefono: telefonoC,localidad: localidadC,
                 mensaje: mensajeC
-            }), { headers: this.headers })
+            }), { headers: this.headers }).toPromise()
+            .then(response => response.json().obj as Mail)
+            .catch(this.handleError);
+    }
+    handleError(handleError: any) {
+        throw new Error("Method not implemented.");
     }
 
    
