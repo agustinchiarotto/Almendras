@@ -68,6 +68,41 @@ hr.new4 {
     min-width: 50%; 
   }
 }
+@media (max-width: 1024px) {
+  .child {
+    min-width: 40%;
+    max-width: 60%; 
+  }
+  #parent
+  {
+    margin-left: 15vh;
+    margin-right: 15vh;
+  }
+}
+/* @media (max-height: 768px) {
+  .child {
+    min-width: 40%;
+    max-width: 60%; 
+  }
+}
+  
+@media (max-height: 1366px) {
+  .child {
+    min-width: 50%;
+    max-width: 70%; 
+  }
+} */
+@media (max-width: 768px) {
+  .child {
+    min-width: 40%; 
+    max-width: 60%;
+  }
+}
+@media (max-width: 812px) {
+  .child {
+    min-width: 40%; 
+  }
+}
 
 .center {
   text-align:center;
