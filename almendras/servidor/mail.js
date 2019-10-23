@@ -42,8 +42,8 @@ function sendMail (req, res){
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: 'api.ciudadmujer@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE BUENO 
-      pass: 'maokai.1/12',
+      user: 'almendrasbuenosvientos@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE BUENO 
+      pass: 'almendras123',
     }
   })
 
