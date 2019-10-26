@@ -18,7 +18,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'CON CHOCOLATE',
     imagen: '../../assets/imagenes/productos/dulces_alm_choco.jpg' ,
     imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+    imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.png',
     size:false, //para ver si es 100% o 50%
     mouse:false, // para el mouse over
     click:false, // para ver si ponemos el coso marron o no
@@ -29,7 +29,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'CON CHOCOLATE',
     imagen: '../../assets/imagenes/productos/dulces_pasas_choco.jpg',
     imagen2: '../../assets/imagenes/etiquetas/pasas_chocolate.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/pasas_chocolate_CE.jpg',
+    imagenCE: '../../assets/imagenes/etiquetas/pasas_chocolate_CE.png',
     size:false,
     mouse:false,
     click:false
@@ -39,7 +39,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'CON CHOCOLATE',
     imagen: '../../assets/imagenes/productos/dulces_avellana_choco.jpg',
     imagen2: '../../assets/imagenes/etiquetas/avellanas_chocolate.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/avellanas_chocolate_CE.jpg',
+    imagenCE: '../../assets/imagenes/etiquetas/avellana_chocolate_CE.png',
     size:false ,
     mouse:false,
     click:false
@@ -49,7 +49,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'DULCES',
     imagen: '../../assets/imagenes/productos/dulces_alm_dulces.jpg',
     imagen2: '../../assets/imagenes/etiquetas/almendras_dulces.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/almendras_dulces_CE.jpg',
+    imagenCE: '../../assets/imagenes/etiquetas/almendras_dulces_CE.png',
     size:true,
     mouse:false,
     click:false
@@ -59,7 +59,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'EN GARRAPINIADA',
     imagen: '../../assets/imagenes/productos/dulces_garra.jpg',
     imagen2: '../../assets/imagenes/etiquetas/almendras_garrapinadas.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/almendras_garrapinadas_CE.jpg',
+    imagenCE: '../../assets/imagenes/etiquetas/almendras_garrapinadas_CE.png',
     size:true,
     mouse:false,
     click:false
@@ -71,7 +71,7 @@ salados = [{
   negrita: 'AHUMADAS',
   imagen: '../../assets/imagenes/productos/saladas_ahumadas.jpg',
   imagen2: '../../assets/imagenes/etiquetas/almendras_ahumadas.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_ahumadas_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_ahumadas_CE.png',
   mouse:false,
   click:false
 },
@@ -80,15 +80,15 @@ salados = [{
   negrita: 'CON OLIVA',
   imagen: '../../assets/imagenes/productos/saladas_oliva.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_oliva.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_oliva_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_oliva_CE.png',
   mouse:false,
   click:false
 },{
   nombre: 'ALMENDRAS',
-  negrita: 'CON PIMENTON',
+  negrita: 'PICANTES',
   imagen: '../../assets/imagenes/productos/saladas_pimenton.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_picantes.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_picantes_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_picantes_CE.png',
   mouse:false,
   click:false
 },{
@@ -96,7 +96,7 @@ salados = [{
   negrita: 'CON ROMERO',
   imagen: '../../assets/imagenes/productos/saladas_romero.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_romero.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_romero_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_romero_CE.png',
   mouse:false,
   click:false
 },{
@@ -104,7 +104,7 @@ salados = [{
   negrita: 'TOSTADAS',
   imagen: '../../assets/imagenes/productos/saladas_tostadas.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_tostadas.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_tostadas_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_tostadas_CE.png',
   mouse:false,
   click:false
 },{
@@ -112,7 +112,7 @@ salados = [{
   negrita: 'CON WASABI',
   imagen: '../../assets/imagenes/productos/saladas_wasabi.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_wasabi.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_wasabi_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_wasabi_CE.png',
   mouse:false,
   click:false
 },
@@ -123,7 +123,7 @@ naturales = [{
   negrita: '',
   imagen: '../../assets/imagenes/productos/naturales_avellanas.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/avellana_chocolate_CE.png',
   mouse:false,
   click:false
 },
@@ -132,7 +132,7 @@ naturales = [{
   negrita: '',
   imagen: '../../assets/imagenes/productos/naturales_nueces.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/nueces_mariposa.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/nueces_mariposa_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/nueces_mariposa_CE.png',
   mouse:false,
   click:false
 },{
@@ -140,7 +140,7 @@ naturales = [{
   negrita: '',
   imagen: '../../assets/imagenes/productos/naturales_mix.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/mix.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/mix_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/mix_CE.png',
   mouse:false,
   click:false
 },{
@@ -148,15 +148,7 @@ naturales = [{
   negrita: '',
   imagen: '../../assets/imagenes/productos/naturales_pasas.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/pasas.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/pasas_CE.jpg',
-  mouse:false,
-  click:false
-},{
-  nombre: 'TOSTADAS',
-  negrita: 'A GRANEL',
-  imagen: '../../assets/imagenes/productos/naturales_tostadas_granel.jpg' ,
-  imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/pasas_CE.png',
   mouse:false,
   click:false
 },{
@@ -164,7 +156,7 @@ naturales = [{
   negrita: 'FILETEADAS',
   imagen: '../../assets/imagenes/productos/naturales_alm_fileteadas.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.png',
   mouse:false,
   click:false
 },
@@ -173,7 +165,7 @@ naturales = [{
   negrita: 'ENTERAS',
   imagen: '../../assets/imagenes/productos/naturales_almendras_enteras.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/almendras_enteras.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_enteras_CE.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_enteras_CE.png',
   mouse:false,
   click:false
 },
@@ -181,8 +173,8 @@ naturales = [{
   nombre: 'HARINA',
   negrita: 'HARINA 000',
   imagen: '../../assets/imagenes/productos/naturales_harina01.jpg',
-  imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+  imagen2: '../../assets/imagenes/productos/naturales_harina01.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.png',
   mouse:false,
   click:false
 },
@@ -190,8 +182,8 @@ naturales = [{
   nombre: 'HARINA',
   negrita: 'HARINA 0000',
   imagen: '../../assets/imagenes/productos/naturales_harina_02.jpg' ,
-  imagen2: '../../assets/imagenes/etiquetas/almendras_chocolate.jpg',
-  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.jpg',
+  imagen2: '../../assets/imagenes/productos/naturales_harina_02.jpg',
+  imagenCE: '../../assets/imagenes/etiquetas/almendras_chocolate_CE.png',
   mouse:false,
   click:false
 }

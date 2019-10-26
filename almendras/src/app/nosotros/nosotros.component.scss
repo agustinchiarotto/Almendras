@@ -34,10 +34,11 @@ hr.new4 {
   }
 
   //ver como hacer para que empiece cuando se enfoca el container
-  .prueba{
+  .prueba[_ngcontent-c4]{
     /* animation-name: fadeInDown;
     animation-duration: 4s;
     animation-play-state: running; */
+    max-width: 30%;
     width: auto;
     height: auto;
     display:block;

@@ -1,11 +1,29 @@
 .h1{
   text-shadow: 1px
 }
+.fondo[_ngcontent-c3]{
+  background: url('src/assets/imagenes/fondoProd1.png') ;
+  background-attachment: fixed;
+  background-size: 30%;
+  z-index: 3;
+  
+  position: relative;
+}
 
 .textoBlanco{
     color:white;
 }
+.close
+{
+  color: rgb(71, 47, 36);
+  font-family: 'Montserrat-Black';
+}
 
+.closes
+{
+  color: rgb(71, 47, 36);
+  font-family: 'Montserrat-Black';
+}
 hr.new4 {
     width: 50%;
     border: 1.5px solid rgba(245,203,88,1);
@@ -178,8 +196,8 @@ hr.new4 {
 
 .cuadradoMarron {
 
-  width: 60vw;
-  height: 20vw;
+  width: 100vw;
+  height: 30vw;
  animation-name: fadeInRight;
  animation-duration: 0.8s;
  animation-play-state: running;
@@ -187,7 +205,7 @@ hr.new4 {
 
 
 
-  background: url('src/assets/imagenes/productos/pastilla.png');
+ // kground: url('src/assets/imagenes/productos/pastilla.png');
   background-repeat: no-repeat;    
     background-position: center center;
   background-size: 100%; 
