@@ -25,7 +25,7 @@ export class ContactoComponent implements OnInit {
 
     this.ancho=window.innerWidth;
     
-    if(this.ancho<414)
+    if(this.ancho<813)
     {
       this.conta=true;
     }

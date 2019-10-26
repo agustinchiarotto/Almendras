@@ -58,55 +58,6 @@
     text-align-last: right;
     
 }
-/* .nombre
-{
-    background-image: url('src/assets/imagenes/contacto/nombre.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-}
-.apellido
-{
-    background-image: url('src/assets/imagenes/contacto/apellido.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-}
-.email
-{
-    background-image: url('src/assets/imagenes/contacto/email.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-}
-.telefono
-{
-    background-image: url('src/assets/imagenes/contacto/telefono.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-}
-.localidad
-{
-    background-image: url('src/assets/imagenes/contacto/localidad.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-}
-.mensaje
-{
-    background-image: url('src/assets/imagenes/contacto/mensaje.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%; 
-    width:100%;
-    max-height: 100%;
-} */
-
 
 .bigicon {
     font-size: 35px;
@@ -132,9 +83,12 @@
     max-height: 94%
   }
 
+
+
+
 //para trabajo responsive usar min-width. Hay q definir uno por cada tamaño del mas chico al mas grande
 //pedirle a las chicas la imagen en la medida necesaria. De otra forma siempre se va a deformar.
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .trama
 {
   background-image: none;//url('src/assets/imagenes/contacto/contactanoscelu.jpg');
@@ -201,9 +155,9 @@
     color: white;
     padding-left: 10%;
   }
-  .formu
+  .formu[_ngcontent-c6]
 {
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 40%;
     //margin-left: 7%;
     margin-right: 10%;
@@ -218,3 +172,92 @@
 }
 
 }
+
+
+
+
+@media screen and (max-width: 812px) {
+    .trama
+  {
+    background-image: none;//url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+    
+    background-size: cover;
+    background-position: center center;
+    
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    z-index: 1;
+    
+  }
+  .trama1
+  {
+      //background-image: url('src/assets/imagenes/contacto/contactanoscelu.jpg');
+      background-color: rgb(77, 79, 80);
+      background-size: cover;
+      z-index: 0;
+  }
+  .celular
+  {
+      align-content: inherit;
+  }
+  
+  .tituloMensaje{
+      font-family: "PlayfairDisplay-Bold";
+      font-size: 22px;
+      color: rgb(212, 154, 7);
+      margin-top: 20%;
+      padding-left: 10%;
+    }
+  
+  .nombreimg
+  {
+      display: none;
+  }
+  .apellido
+  {
+      display: none
+  }
+  .email
+  {
+      display: none
+  }
+  .localidad
+  {
+      display: none
+  }
+  .telefono
+  {
+      display: none
+  }
+  .mensaje
+  {
+      display: none
+  }
+  .textoMensaje{
+      font-family: "Montserrat-Light";
+      font-size: 15px;
+      line-height: 1.7;
+      color: white;
+      padding-left: 10%;
+    }
+    .formu
+  {
+      margin-top: 20%;
+      margin-bottom: 40%;
+      //margin-left: 7%;
+      margin-right: 10%;
+      width: 100%;
+  }
+  .btn-warning{
+      margin-right: 15%;
+  }
+  .col-11
+  {
+      margin-right: 15%;
+  }
+  
+  }
+  
