@@ -9,7 +9,7 @@ import { Mail } from './mail';
 @Injectable()
 export class ContactoService {
     private headers = new Headers({ 'Content-Type': 'application/json' });
-    private contactoURL = 'http://localhost:4200/';  // URL a la api
+    private contactoURL = 'http://localhost:4000/contacto';  // URL a la api
 
     constructor(
         private http: Http,

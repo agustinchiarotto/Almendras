@@ -49,7 +49,7 @@ app.use(auth.initialize());
 
 // USAR ROUTES
 //app.use('/usuario', usuarioRoutes);
-app.post("/",mailRoute.sendMail)
+app.post("/contacto",mailRoute.sendMail)
 
 
 
