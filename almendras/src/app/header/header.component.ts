@@ -47,7 +47,7 @@ export class HeaderComponent implements OnInit {
   hamburguesa:boolean=false;
   armado:boolean=false;
   hizoClick:boolean=false;
-  ruta:string="assets/imagenes/hamburbarco.png"
+  ruta:string="assets/imagenes/barco letras.jpg"
   constructor(@Inject(DOCUMENT) document) {
     
  }
@@ -59,7 +59,7 @@ export class HeaderComponent implements OnInit {
   onWindowScroll() {
     this.hizoClick=true;
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number < 300 ) {
+    if (number <= 300 ) {
         this.hamburguesa=false;
         
         this.ruta="assets/imagenes/barco letras.jpg"

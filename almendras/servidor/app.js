@@ -56,7 +56,7 @@ app.post("/contacto",mailRoute.sendMail)
 //#########################################################
 //            INDEX RENDER PARA ANGULAR2
 //######################################################
-app.set('views', path.join(__dirname, 'src'));
+app.set('views', path.join(__dirname, 'dist'));
 // engine
 app.set('view enginer', 'ejs');
 app.engine('html', require('ejs').renderFile);
