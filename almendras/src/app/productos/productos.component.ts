@@ -59,7 +59,7 @@ export class ProductosComponent implements OnInit {
     negrita: 'EN GARRAPINIADA',
     imagen: '../../assets/imagenes/productos/dulces_garra.jpg',
     imagen2: '../../assets/imagenes/etiquetas/almendras_garrapinadas.jpg',
-    imagenCE: '../../assets/imagenes/etiquetas/almendras_garrapinadas_CE.png',
+    imagenCE: '../../assets/imagenes/etiquetas/almendras_garrapiñadas_CE.png',
     size:true,
     mouse:false,
     click:false
