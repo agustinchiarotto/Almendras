@@ -11,16 +11,12 @@
     [ngStyle]="{'heigth':hamburguesa ? '5.5%' :'20%', 'width':hamburguesa ? '5.5%':'20%', 'margin-left':hamburguesa ? '43vw':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
     alt="logoBV">
   </a>
-
   <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
  
      style="position: absolute;
      right: inherit;" >
     <span class="navbar-toggler-icon"></span>
   </button>
-
-
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
    
     <ul class="navbar-nav mr-auto">
@@ -38,12 +34,7 @@
           
         </div>
       </li>
-    <!--   <li class="nav-item">
-
-          <hr class="amarillo mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
-        <a class="nav-link" href="#recetas"  routerLinkActive="active" >RECETAS</a>
-
-      </li> -->
+ 
       <li class="nav-item">
           <hr class="violeta mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
         <a class="nav-link" href="#nosotros"    routerLinkActive="active" >NOSOTROS</a>
@@ -64,11 +55,7 @@
             autocomplete="false"
             autofocus="false"
             (submit)="buscar()"
-            (keydown.enter)="buscar()"
-        
-            >
-         
-         
+            (keydown.enter)="buscar()">        
           </form>
 
       </li>
@@ -79,17 +66,4 @@
   </div>
 </nav>
 
-<!-- <div class="pos-f-t">
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h4 class="text-white">Collapsed content</h4>
-      <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </nav>
-</div> -->
 
