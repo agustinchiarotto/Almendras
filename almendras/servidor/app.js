@@ -56,7 +56,7 @@ app.post("/contacto",mailRoute.sendMail)
 //#########################################################
 //            INDEX RENDER PARA ANGULAR2
 //######################################################
-app.set('views', path.join(__dirname, 'src'));
+app.set('views', path.join(__dirname, 'dist'));
 // engine
 app.set('view enginer', 'ejs');
 app.engine('html', require('ejs').renderFile);
@@ -101,6 +101,6 @@ jsreport.init();
 
 
 var server = http.createServer(app);
-server.listen(process.env.PORT || 4000, function () {
+server.listen(4000, function () {
     console.log("Servidor Corriendo");
 });
