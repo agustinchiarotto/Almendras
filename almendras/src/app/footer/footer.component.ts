@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+
+  movilV:boolean=false;
    anio:number;
+   ancho:any;
 
   constructor() {
     this.anio= new Date().getFullYear();
    }
 
   ngOnInit() {
+    this.ancho=window.innerWidth;
+    if(this.ancho<414){
+      this.movilV=true
+    }
   }
 
 }
