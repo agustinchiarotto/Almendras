@@ -12,3 +12,19 @@
 {
     background-color: black;
 }
+
+.texto{
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat-black";
+}
+
+@media (max-width:414px){
+
+
+    .texto{
+        color: white;
+        font-size: 10px;
+        font-family: "Montserrat-black";
+    }
+}
