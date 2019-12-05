@@ -4,7 +4,7 @@
         <div></div>
         <div class="row " style="    margin-top: 4%;">
 
-            <div class="col-5 align-self-center pt-5 ">
+            <div class="col-5 align-self-center pt-5 pl-10" [ngClass]="{'col-10 align-self-center celular':movilV }">
                 <div class="row">
                     <div class="col-9">
                         <p>¡Comunicate con nosotros!</p>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <!-- Logos redes sociales -->
-            <div class="col-3 align-self-center mt-5">
+            <div class="col-4 align-self-center mt-5" [ngClass]="{'col-10 align-self-center celular':movilV }">
                 <div class="row justify-content-center">
                     <div class="col-6">
                         <p class="seguinos">¡Seguinos!</p>
@@ -70,12 +70,13 @@
 
            </div>
            <!-- nosotros -->
-           <div class="col-2 offset-md-1 align-self-center pt-5">
+           <div class="col-3 align-self-center pt-5" [ngClass]="{'col-10 align-self-center celular':movilV }">
                <div class="row pt-5">
                    <h5>
                        Diseñado por
-                       <br><br>
-                       www.adacodingdesign.com
+                       <br>
+                       <a href="https://adacodingdesign.com/" target="_blank">
+                       www.adacodingdesign.com</a>
                    </h5>
                </div>
 
