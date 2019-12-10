@@ -5,11 +5,12 @@
  
  <!-- [ngClass]="{'hambur':hamburguesa}"  -->
  
-  <a class="navbar-brand" href="#" style="float: left">
-    <img src="{{ruta}}"
-    height="15%" width="15%"
-    [ngStyle]="{'heigth':hamburguesa ? '5.5%' :'10%', 'width':hamburguesa ? '5.5%':'10%', 'margin-left':hamburguesa ? '43vw':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
-    alt="logoBV">
+  <a class="navbar-brand" href="#">
+ <!--    <img src="{{ruta}}"
+    [ngClass]="{'padLeft':movil}"
+    [ngStyle]="{'heigth':hamburguesa ? '' :'75%', 'width':hamburguesa ? '':'75%', 'margin-left':hamburguesa && !movil ? '40vw':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
+    [ngStyle]="{'margin-left':movil ? '-5%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
+    alt="logoBV"> -->
   </a>
   <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
  
@@ -17,12 +18,12 @@
      right: inherit;" >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;" [ngClass]="{'monitordv':david }">
    
     <ul class="navbar-nav mr-auto">
      
       <li class="nav-item dropdown">
-          <hr class="celeste mb-3"  [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
+          <hr class=" mb-3"  [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'celeste':!movil}">
         <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  routerLinkActive="active">
           PRODUCTOS
         </a>
@@ -36,18 +37,18 @@
       </li>
  
       <li class="nav-item">
-          <hr class="violeta mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
+          <hr class="mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}"  [ngClass]="{'violeta':!movil}">
         <a class="nav-link" href="#nosotros"    routerLinkActive="active" >NOSOTROS</a>
       </li>
       <li class="nav-item">
-          <hr class="verde mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
+          <hr class=" mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'verde':!movil}">
         <a class="nav-link" href="#contacto"   routerLinkActive="active" >CONTACTO</a>
       </li>
     
-      <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
+      <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
 
 
-          <hr class="naranja mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}">
+          <hr class=" mb-3" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'naranja':!movil}">
           <form class="form-inline">
     
             <input class="form-control" name="busqueda" type="search" placeholder="Busqueda" aria-label="Search" style="max-width: 50%;margin-top: -8%;" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" 

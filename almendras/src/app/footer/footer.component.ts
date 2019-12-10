@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
   movilV:boolean=false;
    anio:number;
    ancho:any;
+   tabletH:boolean=false;
 
   constructor() {
     this.anio= new Date().getFullYear();
@@ -20,6 +21,9 @@ export class FooterComponent implements OnInit {
     this.ancho=window.innerWidth;
     if(this.ancho<414){
       this.movilV=true
+    }
+    if(this.ancho=1024){
+      this.tabletH=true
     }
   }
 

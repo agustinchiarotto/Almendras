@@ -45,14 +45,26 @@ export class HeaderComponent implements OnInit {
   model: any = {};
   prevScrollpos = window.pageYOffset;
   hamburguesa:boolean=false;
+  david:boolean=false;
   armado:boolean=false;
   hizoClick:boolean=false;
-  ruta:string="assets/imagenes/barco letras.jpg"
+  movil:boolean=false;
+  ruta:string="assets/imagenes/logoChico.png"
   constructor(@Inject(DOCUMENT) document) {
     
  }
   ngOnInit() {
     this.hamburguesa=false;
+    let number=window.innerWidth;
+
+    if(number > 1650){ 
+      this.david=true;
+      console.log("david true")
+    }
+
+    if(number < 380 ){
+      this.movil=true;
+    }
   }
 
   @HostListener("window:scroll", [])
@@ -62,13 +74,15 @@ export class HeaderComponent implements OnInit {
     if (number <= 300 ) {
         this.hamburguesa=false;
         
-        this.ruta="assets/imagenes/barco letras.jpg"
+        this.ruta="assets/imagenes/logoChico.png"
       //  console.log(this.hamburguesa)
     }
-    if (number > 300) {
+    if (number > 250) {
       this.hamburguesa=true;
-      this.ruta="assets/imagenes/hamburbarco.png"
+      this.ruta="assets/imagenes/logoChico.png"
       //console.log('You are 100px from the top to bottom ' + this.hamburguesa);
+  
+
     }
     document.getElementById('navbarSupportedContent').classList.remove('show');
   }

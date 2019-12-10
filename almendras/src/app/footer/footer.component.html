@@ -4,18 +4,21 @@
         <div></div>
         <div class="row " style="    margin-top: 4%;">
 
-            <div class="col-5 align-self-center pt-5 pl-10" [ngClass]="{'col-10 align-self-center celular':movilV }">
-                <div class="row">
-                    <div class="col-9">
+            <div class="col-5 align-self-center pt-5 pl-10" [ngClass]="{'col-10 align-self-start celular':movilV }">
+                <div class="row comu">
+                    <div class="col-9"*ngIf="!movilV">
                         <p>¡Comunicate con nosotros!</p>
                     </div>
+                    <div class="col-9 comunicate"*ngIf="movilV">
+                            <p>¡Comunicate <br>con nosotros!</p>
+                        </div>
 
                 </div>
                 <div class="row">
-                    <div class="col-5 ">
+                    <div class="col-5 "*ngIf="!movilV && !TabletH">
 
                     </div>
-                    <div class="col-7">
+                    <div class="col-7" [ngClass]="{'col-10 align-self-center celular':movilV }">
                         <div class="row">
                             <!-- telefono -->
                             <div class="col-2 mt-2">
@@ -40,7 +43,7 @@
                                             <img src="../../assets/imagenes/footerweb-04.png" alt="">
                                     </div>
                                     <div class="col-10 mt-2 align-self-start ">
-                                            <h5> <b>Direeccion:</b>  Ruta 151 km 32,5;<br>
+                                            <h5> <b>Dirección:</b>  Ruta 151 km 32,5;<br>
                                             Campo Grande; Rio Negro</h5>
                                             
                                     </div>
@@ -49,7 +52,7 @@
                 </div>
             </div>
             <!-- Logos redes sociales -->
-            <div class="col-4 align-self-center mt-5" [ngClass]="{'col-10 align-self-center celular':movilV }">
+            <div class="col-4 align-self-center mt-5" *ngIf='!movilV'>
                 <div class="row justify-content-center">
                     <div class="col-6">
                         <p class="seguinos">¡Seguinos!</p>
@@ -57,30 +60,65 @@
                    
                 </div>
                 <div class="row">
-                    <div class="col-2 offset-md-3">
+                    <div class="col-2 offset-md-3 face">
                             <a href="https://es-la.facebook.com/Buenos-Vientos-1846438855623224/" target="_blank">
                                <img src="../../assets/imagenes/footerweb-05.png" alt=""></a>
                             </div>
-                            <div class="col-2 offset-md-1">
+                            <div class="col-2 offset-md-1 insta">
                                     <a href="https://www.instagram.com/buenosvientospatagonia/" target="_blank">
                                     
                                     <img src="../../assets/imagenes/footerweb-06.png" alt=""></a>
                                 </div>
                 </div>
-
            </div>
+           <!-- Logos redes sociales celular -->
+           <div class="col align-self-start mt-5" *ngIf='movilV'>
+            <div class="row ">
+                <div class="col align-self-start">
+                    <p class="seguinos">¡Seguinos!</p>
+                </div>
+               
+            </div>
+            <div class="row face">
+
+                <a href="https://es-la.facebook.com/Buenos-Vientos-1846438855623224/" target="_blank">
+                <img src="../../assets/imagenes/footerweb-05.png" alt=""></a>
+
+                
+                
+                        
+            </div>
+            <div class="row insta">
+                    <a href="https://www.instagram.com/buenosvientospatagonia/" target="_blank">
+                            
+                        <img src="../../assets/imagenes/footerweb-06.png" alt=""></a>
+                </div>
+       </div>
+
+
            <!-- nosotros -->
-           <div class="col-3 align-self-center pt-5" [ngClass]="{'col-10 align-self-center celular':movilV }">
+           <div class="col-3 align-self-center pt-5" *ngIf="!movilV">
                <div class="row pt-5">
                    <h5>
                        Diseñado por
                        <br>
-                       <a href="https://adacodingdesign.com/" target="_blank">
+                       <a href="https://adacodingdesign.com/" target="_blank" style="color:white;">
                        www.adacodingdesign.com</a>
                    </h5>
                </div>
 
             </div>
+
+            <!-- nosotros celular -->
+
+            <div class="col pt-5" *ngIf="movilV">
+                    <div class="row pt-5 justify-content-center">
+                        <h5>
+                            Diseñado por  <a href="https://adacodingdesign.com/" target="_blank" style="color:white;"> www.adacodingdesign.com</a>
+                        </h5>
+                    </div>
+     
+                 </div>
         </div>
 
     </div>

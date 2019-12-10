@@ -41,6 +41,8 @@ img:hover
     box-shadow: 10px 10px 5px #000000;
 }
 
+
+
 @media only screen and (max-width: 1366px)
 {
     .footer3{
@@ -80,10 +82,41 @@ img:hover
     {
         box-shadow: 10px 10px 5px #000000;
     }
+    
 }
 
 @media only screen and (max-width: 414px)
 {
+.row
+{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.comu
+{
+    padding-left: 1.5vh;
+}
+.comunicate
+{
+    text-align: start;
+    padding-left: 1.5vh;
+
+}
+.face
+{
+    padding-left: 3vh;
+}
+.insta 
+{
+    padding-left: 3vh;
+    margin-top: 1.5vh;
+}
+.seguinos
+{
+    text-align: start;
+    padding-left: 2.5vh;
+}
+
     .footer3{
         background: none;//url("../../assets/imagenes/footerweb-07.png");
         background-size: contain;
@@ -98,7 +131,7 @@ img:hover
     p{
         color: white;
         font-family: "Montserrat-Black";
-        font-size: 10px;
+        font-size: 17px;
     }
     h2{
         color: white;
@@ -114,8 +147,8 @@ img:hover
         padding-top: 0vh;
     }
     .pl-10
-    {
-        padding-left: 5vw;
+    {        
+        margin-left: 0vh;
     }
     img:hover
     {
@@ -129,4 +162,147 @@ img:hover
 img:hover
 {
     box-shadow: 10px 10px 5px #000000;
+}
+
+
+@media only screen and (max-width: 812px)
+{
+.row
+{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.comu
+{
+    padding-left: 1.5vh;
+}
+.comunicate
+{
+    text-align: start;
+    padding-left: 1.5vh;
+
+}
+.face
+{
+    padding-left: 3vh;
+}
+.insta 
+{
+    padding-left: 3vh;
+    margin-top: 1.5vh;
+}
+.seguinos
+{
+    text-align: start;
+    padding-left: 2.5vh;
+}
+
+    .footer3{
+        background: none;//url("../../assets/imagenes/footerweb-07.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(43,34,28);
+    }
+    
+    .footer2
+    {
+        background-color: black;
+    }
+    p{
+        color: white;
+        font-family: "Montserrat-Black";
+        font-size: 17px;
+    }
+    h2{
+        color: white;
+    }
+    h5{
+        color: white;
+        text-align: left;
+        font-family: "Montserrat-Regular";
+        font-size: 10px;
+    }
+    .pt-10
+    {
+        padding-top: 0vh;
+    }
+    .pl-10
+    {        
+        margin-left: 0vh;
+    }
+    img:hover
+    {
+        box-shadow: 10px 10px 5px #000000;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+.row
+{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.comu
+{
+    padding-left: 1.5vh;
+}
+.comunicate
+{
+    text-align: start;
+    padding-left: 1.5vh;
+
+}
+.face
+{
+    padding-left: 3vh;
+}
+.insta 
+{
+    padding-left: 3vh;
+    margin-top: 1.5vh;
+}
+.seguinos
+{
+    text-align: start;
+    padding-left: 2.5vh;
+}
+
+    .footer3{
+        background: none;//url("../../assets/imagenes/footerweb-07.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: rgb(43,34,28);
+    }
+    
+    .footer2
+    {
+        background-color: black;
+    }
+    p{
+        color: white;
+        font-family: "Montserrat-Black";
+        font-size: 17px;
+    }
+    h2{
+        color: white;
+    }
+    h5{
+        color: white;
+        text-align: left;
+        font-family: "Montserrat-Regular";
+        font-size: 10px;
+    }
+    .pt-10
+    {
+        padding-top: 0vh;
+    }
+    .pl-10
+    {        
+        margin-left: 0vh;
+    }
+    img:hover
+    {
+        box-shadow: 10px 10px 5px #000000;
+    }
 }
