@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HostListener, Inject } from "@angular/core";
+import { HostListener, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 import {
   trigger,
@@ -23,14 +23,14 @@ import { NgForm } from '@angular/forms';
     trigger('hamburTrigger', [
       // ...
       state('armado', style({
-        
+
         opacity: 0.8,
-       
+
       })),
       state('normal', style({
-      
+
         opacity: 1,
-    
+
       })),
       transition('armado => normal', [
         animate('0.5s')
@@ -44,58 +44,59 @@ import { NgForm } from '@angular/forms';
 export class HeaderComponent implements OnInit {
   model: any = {};
   prevScrollpos = window.pageYOffset;
-  hamburguesa:boolean=false;
-  david:boolean=false;
-  armado:boolean=false;
-  hizoClick:boolean=false;
-  movil:boolean=false;
-  ruta:string="assets/imagenes/logoChico.png"
+  hamburguesa = false;
+  david = false;
+  armado = false;
+  hizoClick = false;
+  movil = false;
+  ruta = 'assets/imagenes/logoChico.png';
   constructor(@Inject(DOCUMENT) document) {
-    
+
  }
   ngOnInit() {
-    this.hamburguesa=false;
-    let number=window.innerWidth;
+    this.hamburguesa = false;
+    const number = window.innerWidth;
 
-    if(number > 1650){ 
-      this.david=true;
-      console.log("david true")
+    if (number > 1650) {
+      this.david = true;
+     // console.log('david true');
     }
 
-    if(number < 380 ){
-      this.movil=true;
+    if (number < 380 ) {
+      this.movil = true;
     }
   }
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.hizoClick=true;
+    this.hizoClick = true;
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    if (number <= 300 ) {
-        this.hamburguesa=false;
-        
-        this.ruta="assets/imagenes/logoChico.png"
+    if (number <= 150 ) {
+        this.hamburguesa = false;
+
+        this.ruta = 'assets/imagenes/logoChico.png';
       //  console.log(this.hamburguesa)
     }
-    if (number > 250) {
-      this.hamburguesa=true;
-      this.ruta="assets/imagenes/logoChico.png"
-      //console.log('You are 100px from the top to bottom ' + this.hamburguesa);
-  
+    if (number > 150) {
+      this.hamburguesa = true;
+      // tslint:disable-next-line:comment-format
+      this.ruta = 'assets/imagenes/logoChico.png'; //Esta ruta esta por si hay que cambiar la imagen del logo al bajar
+      // console.log('You are 100px from the top to bottom ' + this.hamburguesa);
+
 
     }
     document.getElementById('navbarSupportedContent').classList.remove('show');
   }
 
-  mouseEnter(){
-    this.armado=false
+  mouseEnter() {
+    this.armado = false;
   }
-  mouseLeave(){
-    this.armado=true;
+  mouseLeave() {
+    this.armado = true;
   }
 
-buscar(){
-  console.log(this.model.busqueda);
+buscar() {
+//  console.log(this.model.busqueda);
   window.location.href = 'http://www.google.com/search?q=site:buenosvientos.com.ar ' + this.model.busqueda;
 }
 

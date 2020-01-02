@@ -52,7 +52,7 @@
                                                                     n.ready=function(){o=!0,n.initWidgetsFromBuffer()}
                                                                     ,n.initWidget=function(t,r){
 
-                                                                        console.log("este es el t");
+                                                                    /*     console.log("este es el t");
                                                                         console.log(t);
                                                                         console.log("este es el n");
                                                                         
@@ -61,7 +61,7 @@
 
                                                                         console.log("este es el e");
                                                                         console.log(e);
-
+ */
                                                                         if(o){r.websiteUrl=""||"undefined";var a={websiteUrl:r.websiteUrl,deactivate:false,widgetId:r.id||null,showElfsightLogo:false,owner:true,platform:r.platform}
                                                                     ;r.settings=[r.settings,a].reduce(function(e,t){return Object.keys(t).forEach(function(n){e[n]=t[n]}),e},{}),e.initWidget(t,r.settings,r),r.isOwner&&n.initToolbar(t,r)}
                                                                    

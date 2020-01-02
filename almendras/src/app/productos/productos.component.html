@@ -27,7 +27,7 @@
       <hr class="new4">
     </h1>
 
-    <div class="text-center textoConocenos">
+    <div class="text-center textoConocenos colorMarron">
 
       La tierra, el agua y el clima de esta región de la patagonia le confieren a nuestros <br>
       frutos secos sabor, color y tamaños inigualables.
@@ -39,28 +39,28 @@
       <div class="row m-4 justify-content-md-center">
         <div class="col nopadding ml-4 center">
 
-          <img src="assets/imagenes/conocenos1.gif" alt="">
+          <a href="#dulces">     <img src="assets/imagenes/conocenos1.gif" alt="" > </a>
 
         </div>
         <div class="col nopadding center">
-          <img src="assets/imagenes/conocenos2.gif" alt="">
+          <a href="#salados">     <img src="assets/imagenes/conocenos2.gif" alt=""> </a>
 
         </div>
         <div class="col nopadding center">
-          <img src="assets/imagenes/conocenos3.gif" alt="">
+          <a href="#naturales">     <img src="assets/imagenes/conocenos3.gif" alt=""> </a>
 
         </div>
       </div>
     </div>
   </div>
-  <div class="w3-container m-1 align-items-center fondoMarron " style=" max-width: 100%; height: 2em;">
+  <div class="w3-container m-1 align-items-center fondoMarron " id="dulces" style=" max-width: 100%; height: 2em;">
     <h1></h1>
   </div>
   <div class="w3-container m-1 align-items-center fondo" id="dulces" style=" max-width: 100%;">
     <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
       Dulces
     </h1>
-    <h2 class="text-center textoProductosNegrita" style="max-width: 100%; color: black; font-size: 20px">Tardes
+    <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Tardes
       tentadoras</h2>
 
 
@@ -75,13 +75,14 @@
       <div class="child" *ngFor="let dulce of dulces;let i = index" [ngStyle]="{'margin-right': i==4  && !movil ? '15%' :'0%','margin-left': i==3 && !movil ? '15%' :'0%'}">
 
 
-
+        <a href=#dulces>
         <img class="center" src="{{dulce.imagen}}" alt="imagen" [ngStyle]="{'width': dulce.size && !movil ? '70%' :'80%'}"
           (mouseenter)="mouseEnter(dulce)" (mouseleave)="mouseLeave(dulce) " (click)="onclickDulce(dulce)">
-        <h2 class="text-center textoProductos">
-
+        </a>
+        <h2 class="text-center textoProductos colorMarron">
+   
           {{dulce.nombre}}</h2>
-        <h2 class="text-center textoProductosNegrita">
+        <h2 class="text-center textoProductosNegrita colorMarron">
           {{dulce.negrita}}</h2>
       </div>
     </div>
@@ -115,21 +116,23 @@
   <!-- termina el coso marron -->
 
 
-  <div class="w3-container m-1 align-items-center fondoAmarillo " style=" max-width: 100%; height: 2em;">
+  <div class="w3-container m-1 align-items-center fondoAmarillo " id="salados" style=" max-width: 100%; height: 2em;">
     <h1></h1>
   </div>
   <div class="w3-container m-1 align-items-center fondo" id="salados" style=" max-width: 100%;">
     <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
       Salados
     </h1>
-    <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
+    <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
     <div id="parent" *ngIf="!mostrarSalados">
       <div class="child" *ngFor="let salado of salados">
+        <a href=#salados>
         <img class="center" src="{{salado.imagen}}" alt="imagen" width="80%" (mouseenter)="mouseEnter(salado)"
           (mouseleave)="mouseLeave(salado)" (click)="onclickSalado(salado)">
-        <h2 class="text-center textoProductos">
+          </a>
+        <h2 class="text-center textoProductos colorMarron">
           {{salado.nombre}}</h2>
-        <h2 class="text-center textoProductosNegrita">
+        <h2 class="text-center textoProductosNegrita colorMarron">
           {{salado.negrita}}</h2>
       </div>
     </div>
@@ -171,16 +174,19 @@
     <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
       Naturales
     </h1>
-    <h2 class="text-center textoProductosNegrita" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
+    <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
     <div id="parent" *ngIf="!mostrarNaturales">
-      <div class="child" *ngFor="let natural of naturales let i = index" [ngStyle]="{'margin-right': i==7  && !movil ? '15%' :'0%','margin-left': i==6 && !movil ? '15%' :'0%'}" >
+      <div class="child" *ngFor="let natural of naturales let i = index" 
+    
+      >
         <a href=#naturales>
-          <img class="center" src="{{natural.imagen}}" alt="imagen" width="80%" (mouseenter)="mouseEnter(natural)"
+          <img class="center" src="{{natural.imagen}}" alt="imagen" (mouseenter)="mouseEnter(natural)"
+          [ngStyle]="{'width': i>5 && natural.mouse ? '36.35%' :'80%'}" 
             (mouseleave)="mouseLeave(natural)" (click)="onclickNaturales(natural)">
         </a>
-        <h2 class="text-center textoProductos">
+        <h2 class="text-center textoProductos colorMarron">
           {{natural.nombre}}</h2>
-        <h2 class="text-center textoProductosNegrita">
+        <h2 class="text-center textoProductosNegrita colorMarron">
           {{natural.negrita}}</h2>
       </div>
     </div>
