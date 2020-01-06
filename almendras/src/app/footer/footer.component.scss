@@ -1,8 +1,9 @@
 .footer3{
-    background: url("../../assets/imagenes/footerweb-07.png");
-    background-size: cover;
-    background-color: black;
+    background: url("../../assets/imagenes/footer/fondoF.jpg");
+   // background-size: cover;
+   // background-color: black;
     background-repeat: no-repeat;
+    height: 1200px;
 }
 
 .footer2
@@ -38,7 +39,7 @@ h5{
 }
 img:hover
 {
-    box-shadow: 10px 10px 5px #000000;
+  //  box-shadow: 10px 10px 5px #000000;
 }
 
 
@@ -80,9 +81,13 @@ img:hover
     }
     img:hover
     {
-        box-shadow: 10px 10px 5px #000000;
+      //  box-shadow: 10px 10px 5px #000000;
     }
     
+}
+
+.primerRow{
+    margin-top: 20%;
 }
 
 @media only screen and (max-width: 414px)
@@ -92,6 +97,7 @@ img:hover
     margin-left: 0%;
     margin-right: 0%;
 }
+
 .comu
 {
     padding-left: 1.5vh;
@@ -152,7 +158,7 @@ img:hover
     }
     img:hover
     {
-        box-shadow: 10px 10px 5px #000000;
+       // box-shadow: 10px 10px 5px #000000;
     }
 }
 .pl-10
@@ -161,7 +167,7 @@ img:hover
 }
 img:hover
 {
-    box-shadow: 10px 10px 5px #000000;
+   // box-shadow: 10px 10px 5px #000000;
 }
 
 
@@ -232,7 +238,7 @@ img:hover
     }
     img:hover
     {
-        box-shadow: 10px 10px 5px #000000;
+      //  box-shadow: 10px 10px 5px #000000;
     }
 }
 
@@ -303,6 +309,6 @@ img:hover
     }
     img:hover
     {
-        box-shadow: 10px 10px 5px #000000;
+       // box-shadow: 10px 10px 5px #000000;
     }
 }
