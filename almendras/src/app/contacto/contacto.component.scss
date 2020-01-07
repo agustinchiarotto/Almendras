@@ -10,6 +10,7 @@
     width: 100%;
     height: 100%;
     max-width: 100%;
+    
 
 
 
@@ -30,16 +31,18 @@
 }
 .tituloMensaje{
     font-family: 'Montserrat-SemiBold';
-    font-size: 52px;
+    font-size: 45px;
     color: rgb(212, 154, 7);
     margin-top: 20%;
+    max-width: 600px;
+    text-align: left;
   }
 
   .textoMensaje{
     font-family: "Montserrat-Light";
     font-size: 22px;
     line-height: 1.7;
-    color: white;
+    color: black;
   }
 .contact
 {
@@ -48,7 +51,7 @@
 }
 .formu
 {
-    margin-top: 20%;
+    margin-top: 9%;
     margin-bottom: 40%;
     //margin-left: 7%;
     margin-right: 5%
@@ -122,6 +125,8 @@
     color: rgb(212, 154, 7);
     margin-top: 20%;
     padding-left: 10%;
+  
+
   }
 
 .nombreimg

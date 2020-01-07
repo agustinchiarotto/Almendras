@@ -76,7 +76,7 @@
 
 
         <a href=#dulces>
-        <img class="center" src="{{dulce.imagen}}" alt="imagen" [ngStyle]="{'width': dulce.size && !movil ? '70%' :'80%'}"
+        <img class="center wow animated pulse delay-1s" src="{{dulce.imagen}}" alt="imagen" [ngStyle]="{'width': dulce.size && !movil ? '70%' :'80%'}"
           (mouseenter)="mouseEnter(dulce)" (mouseleave)="mouseLeave(dulce) " (click)="onclickDulce(dulce)">
         </a>
         <h2 class="text-center textoProductos colorMarron">
@@ -98,7 +98,7 @@
         <div class="cuadradoMarron  mt-1">
           <div class="row justify-content-center">
             <div class="col-lg-3 mt-4">
-              <img class="center" src="{{dulce.imagen}}" alt="imagen" style="max-width: 90%;width:90%">
+              <img class="center wow animated pulse delay-1s" src="{{dulce.imagen}}" alt="imagen" style="max-width: 90%;width:90%">
             </div>
             <div class="col-lg-7 align-self-center">
               <button type="button" class="close closes align-self-center" aria-label="Close" (click)="cerrarMarron()"
@@ -127,7 +127,7 @@
     <div id="parent" *ngIf="!mostrarSalados">
       <div class="child" *ngFor="let salado of salados">
         <a href=#salados>
-        <img class="center" src="{{salado.imagen}}" alt="imagen" width="80%" (mouseenter)="mouseEnter(salado)"
+        <img class="center wow animated pulse delay-1s" src="{{salado.imagen}}" alt="imagen" width="80%" (mouseenter)="mouseEnter(salado)"
           (mouseleave)="mouseLeave(salado)" (click)="onclickSalado(salado)">
           </a>
         <h2 class="text-center textoProductos colorMarron">
@@ -180,7 +180,7 @@
     
       >
         <a href=#naturales>
-          <img class="center" src="{{natural.imagen}}" alt="imagen" (mouseenter)="mouseEnter(natural)"
+          <img class="center wow animated pulse delay-1s" src="{{natural.imagen}}" alt="imagen" (mouseenter)="mouseEnter(natural)"
           [ngStyle]="{'width': i>5 && natural.mouse ? '36.35%' :'80%'}" 
             (mouseleave)="mouseLeave(natural)" (click)="onclickNaturales(natural)">
         </a>

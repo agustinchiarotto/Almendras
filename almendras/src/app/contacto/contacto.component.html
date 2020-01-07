@@ -2,15 +2,15 @@
     <div class="w3-container  trama">
         <div class="row justify-content-end ">
               <!--   <div class="col-md-7"></div> -->
-                <div class="col-5 col-centered  "[ngClass]="{'col-12 celular':conta }">
+                <div class="col-5 col-centered  mr-4"[ngClass]="{'col-12 celular':conta }">
                 
                     
-                            <div class="text-center tituloMensaje">¡Envianos un mensaje!</div>
-                            <div class="text-center textoMensaje">
+                            <div class=" tituloMensaje ml-4 wow animated fadeInLeft">¡Envianos un mensaje!</div>
+                            <div class="text-center textoMensaje wow animated fadeInLeft">
 
                                 Nos encanta saber tus opiniones.
                               </div>
-                                <form class="form-horizontal formu" #f="ngForm"  (ngSubmit)="f.form.valid && enviarMail(f)">
+                                <form class="form-horizontal formu wow animated fadeInDown" #f="ngForm"  (ngSubmit)="f.form.valid && enviarMail(f)">
                                    
                                         
                 
@@ -88,7 +88,7 @@
                 
                                         <div class="form-group required">
                                             <div class="col-11 posbuton" >
-                                                <button [disabled]="!f.form.valid" type="submit" class="btn btn-warning btn-lg" style="margin-right:-6%">Enviar </button>
+                                                <button [disabled]="!f.form.valid" type="submit" class="btn btn-warning btn-lg" style="margin-right:-6%; font-family: 'Montserrat-SemiBold'; font-size: 15px;">Enviar </button>
                                             </div>
                                         </div>
                 
