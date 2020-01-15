@@ -1,5 +1,5 @@
 .footer3 {
-    background: url("../../assets/imagenes/footer/fondoF.jpg");
+    background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
     //  background-size: cover;
     // background-color: black;
     background-repeat: no-repeat;
@@ -172,7 +172,8 @@ img:hover {
 
 @media only screen and (max-width: 1366px) {
     .footer3 {
-        background: url("../../assets/imagenes/footerweb-07.png");
+        background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
+        //background: url("../../assets/imagenes/footerweb-07.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-color: black;
@@ -355,7 +356,7 @@ img:hover {
         padding-left: 2.5vh;
     }
     .footer3 {
-        background: none; //url("../../assets/imagenes/footerweb-07.png");
+        background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         background-color: rgb(43, 34, 28);
@@ -385,5 +386,10 @@ img:hover {
     }
     img:hover {
         // box-shadow: 10px 10px 5px #000000;
+    }
+    .texto1 {
+        color: white;
+        font-family: "Montserrat-Regular";
+        font-size: 15px;
     }
 }

@@ -1,279 +1,255 @@
-h1{
-    color:black;
+h1 {
+    color: black;
     font-family: 'PlayfairDisplay-Black';
-
 }
 
-.textoNegro{
-    color:black;
+.textoNegro {
+    color: black;
 }
 
-.numero{
-  columns: #665048;;
-  font-family: 'Montserrat-Bold';
-  font-size: 46.3;
+.numero {
+    columns: #665048;
+    ;
+    font-family: 'Montserrat-Bold';
+    font-size: 46.3;
 }
 
-.btn-link{
-  color:#87CFBE;
-  font-family: 'Montserrat-Medium';
-  font-size: 37.7;
+.btn-link {
+    color: #87CFBE;
+    font-family: 'Montserrat-Medium';
+    font-size: 37.7;
 }
 
 hr.new4 {
-  
     width: 30%;
     border: 2px solid #87CFBE;
-    
-  }
+}
 
-  img{
-      max-width: 100%;
-  }
+img {
+    max-width: 100%;
+}
 
-.fondoNegro{
+.fondoNegro {
     background-color: black;
-  }
-.fondoRosa{
-    background-color: rgb(241, 232, 227
-    );
-  }
-  .fondoMarron{
-    background-color: rgb(185, 177, 169);
-  }
-.container{
-    width: 100%;
-  }
+}
 
-  //ver como hacer para que empiece cuando se enfoca el container
-  .prueba[_ngcontent-c4]{
+.fondoRosa {
+    background-color: rgb(241, 232, 227);
+}
+
+.fondoMarron {
+    background-color: rgb(185, 177, 169);
+}
+
+.container {
+    width: 100%;
+}
+
+//ver como hacer para que empiece cuando se enfoca el container
+.prueba[_ngcontent-c4] {
     /* animation-name: fadeInDown;
     animation-duration: 4s;
     animation-play-state: running; */
-  
     max-width: 30%;
     width: auto;
     height: auto;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     z-index: 0;
     position: relative;
+}
 
-   
-    
-    
-  }
-
-  .rectanguloEnBlanco{
+.rectanguloEnBlanco {
     height: 13vw;
-   
-  }
+}
 
-  h2{
-    font-family: 'Montserrat-Bold';
+h2 {
+    font-family: 'Montserrat-SemiBold';
     font-size: 52px;
     color: #665048;
     line-height: 54px;
-  }
-
-.conocenosImagen{
-  background: url('src/assets/imagenes/conocenos/conocenos_fondo.jpg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
- // background-attachment: fixed;
-  background-position: center top;
-  height: 73vw;
-  margin-top: -3.5%;
-  
 }
 
-
-.atras
-{
-  z-index: 1;
-  position: relative;
+.conocenosImagen {
+    background: url('src/assets/imagenes/conocenos/conocenos_fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // background-attachment: fixed;
+    background-position: center top;
+    height: 73vw;
+    margin-top: -3.5%;
 }
-  .efectoAlmendra
-  {
-    background: url('src/assets/imagenes/almendrasBaja.png') ;
+
+.atras {
+    z-index: 1;
+    position: relative;
+}
+
+.efectoAlmendra {
+    background: url('src/assets/imagenes/almendrasBaja.png');
     background-attachment: fixed;
     background-size: 70%;
     width: 100%;
     z-index: 3;
     position: relative;
     //background: transparent;
-  }
-  /* .fondoConocenos{
+}
+
+
+/* .fondoConocenos{
     //background: url("../../assets/imagenes/fondoconocenos.png") no-repeat fixed; 
     background-size: 100% 100%;
     max-width: 100%;
     height: auto;
   
   } */
+
 //robado de la pag de almendra
-  .animation {
+.animation {
     z-index: 2;
     position: absolute;
     width: 100%;
 }
+
 .mobileImage {
-  display: none;
+    display: none;
 }
-  .motion_image_block{
-    position:relative;
-    display:block;
-    top:0;
-    left:0;
-  }
-  .motion_image_block>.mask {
+
+.motion_image_block {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+.motion_image_block>.mask {
     position: relative;
     overflow: hidden;
 }
+
 .motion_image_block>.mask>.image {
-  margin: 0 auto;
-  display: block;
-  position: absolute;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
 }
 
-.pt-8{
-  padding-top: 6vw;
+.pt-8 {
+    padding-top: 6vw;
 }
 
 //hasta aca
-  .tarjeta{
-    max-width:70%;
+.tarjeta {
+    max-width: 70%;
     max-height: 45%;
-  }
-  .tituloConocenos
-  {
+}
+
+.tituloConocenos {
     font-family: 'Montserrat-SemiBold';
     font-size: 52px;
     padding-top: 3%;
-    color: rgb(119,87,70)
-  }
-  .tituloTexto
-  {
+    color: rgb(119, 87, 70)
+}
+
+.tituloTexto {
     margin-top: 7%;
     font-family: "Montserrat-SemiBold";
     font-size: 28px;
-    color: rgb(237,196,93);
+    color: rgb(237, 196, 93);
+}
 
-   
-  }
-  .texto1
-  {
+.texto1 {
     font-family: "Montserrat-Regular";
     font-size: 19px;
-    color: rgb(119,87,70);
-  }
-.texto2
-{
-  margin-top: 5px;
-  font-family: "Montserrat-Light";
-  font-size: 15px;
-  color: rgb(119,97,70);
+    color: rgb(119, 87, 70);
 }
-.texto3
-{
-  margin-top: 5px;
-  font-family: "Montserrat-SemiBold";
-  font-size: 15px;
-  color: rgb(119,97,70);
+
+.texto2 {
+    margin-top: 5px;
+    font-family: "Montserrat-Light";
+    font-size: 15px;
+    color: rgb(119, 97, 70);
+}
+
+.texto3 {
+    margin-top: 5px;
+    font-family: "Montserrat-SemiBold";
+    font-size: 15px;
+    color: rgb(119, 97, 70);
 }
 
 hr.new5 {
-  width: 100%;
-  border:  2px solid rgb(237,196,93);
-  margin-bottom: 15%;
-  
-}
-.fondo
-{
-  background-color: rgb(241,232,227);
-  z-index: 0;
+    width: 100%;
+    border: 2px solid rgb(237, 196, 93);
+    margin-bottom: 15%;
 }
 
+.fondo {
+    background-color: rgb(241, 232, 227);
+    z-index: 0;
+}
 
-
-
-
-
-
-  //mobile
-  @media only screen and (max-width: 414px) {
-   
+//mobile
+@media only screen and (max-width: 414px) {
     hr.new4 {
         width: 70%;
-        border: 2px solid rgb(237,196,93);
-        
-      }
-  .efectoAlmendra
-  {
-    background: url('src/assets/imagenes/almendrasBaja.png') ;
-    background-attachment: fixed;
-    width: 100%; 
-    //background: no-repeat;
-    //background-size: 100%;
-    z-index: 3;
-    position: relative;
-    //background: transparent;
-  }
-  .aux
-  {
-    display: none;
-  }
-   .aux2
-  {
-    text-align: left;
-    padding-left: 40px;
-    max-width: 50%;
-   
-  } 
-
-  .tituloConocenos
-  {
-    font-family: 'Montserrat-SemiBold';
-    font-size: 30px;
-    color: rgb(119,87,70)
-  }
-  .tituloTexto
-  {
-    margin-top: 7%;
-    font-family: "Montserrat-SemiBold";
-    font-size: 20px;
-    color: rgb(237,196,93);
-
-   
-  }
-  .texto1
-  {
-    font-family: "Montserrat-Regular";
-    font-size: 15px;
-    color: rgb(119,87,70);
-  }
-.texto2
-{
-  margin-top: 5px;
-  font-family: "Montserrat-Light";
-  font-size: 12px;
-  color: rgb(119,97,70);
+        border: 2px solid rgb(237, 196, 93);
+    }
+    .efectoAlmendra {
+        background: url('src/assets/imagenes/almendrasBaja.png');
+        background-attachment: fixed;
+        width: 100%;
+        //background: no-repeat;
+        //background-size: 100%;
+        z-index: 3;
+        position: relative;
+        //background: transparent;
+    }
+    .aux {
+        display: none;
+    }
+    .aux2 {
+        text-align: left;
+        padding-left: 40px;
+        max-width: 50%;
+    }
+    .tituloConocenos {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 30px;
+        color: rgb(119, 87, 70)
+    }
+    .tituloTexto {
+        margin-top: 7%;
+        font-family: "Montserrat-SemiBold";
+        font-size: 20px;
+        color: rgb(237, 196, 93);
+    }
+    .texto1 {
+        font-family: "Montserrat-Regular";
+        font-size: 15px;
+        color: rgb(119, 87, 70);
+    }
+    .texto2 {
+        margin-top: 5px;
+        font-family: "Montserrat-Light";
+        font-size: 12px;
+        color: rgb(119, 97, 70);
+    }
+    .texto3 {
+        margin-top: 5px;
+        font-family: "Montserrat-SemiBold";
+        font-size: 15px;
+        color: rgb(119, 97, 70);
+    }
+    .col-12 {
+        // align-items: center;
+        padding-left: 30px;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 33px;
+        margin-bottom: -11%
+    }
+    .elfsight-app-6c892db4-63d7-4c6d-acc5-f8493d136ba2 {
+        padding-top: 23%
+    }
 }
-.texto3
-{
-  margin-top: 5px;
-  font-family: "Montserrat-SemiBold";
-  font-size: 15px;
-  color: rgb(119,97,70);
-}
-
-.col-12
-{
-   // align-items: center;
-    padding-left: 30px;
-    max-width: 100%;
-}
-}
-
-
-
-  

@@ -2,49 +2,41 @@
 
 
 
-<div class=" conocenosImagen" *ngIf="!movil">
-  
-  <h1 class="text-center mb-0  tituloConocenos ">
-    Conocenos
-    <hr class="new4">
-  </h1>
+    <div class=" conocenosImagen" *ngIf="!movil">
+
+        <h1 class="text-center mb-0  tituloConocenos ">
+            Conocenos
+            <hr class="new4">
+        </h1>
 
 
-  <div class="cotainer">
+        <div class="cotainer">
 
-      <div class="row">
+            <div class="row">
 
-        <div class="col-4 pd-4">
-         
+                <div class="col-4 pd-4">
+
+
+                </div>
+
+            </div>
 
         </div>
 
-      </div>
+    </div>
 
-  </div>
-     
-</div>
-      
-<div class= "rectanguloEnBlanco">  
-  <h2 class="text-center pt-8">Seguinos en Instagram</h2>
-</div>
+    <div class="rectanguloEnBlanco">
 
+        <div *ngIf="movil">
+            <h2 class="text-center pt-8" [ngClass]="{'baja':!movilV }">SEGUINOS EN </h2>
+            <h2 class="text-center pt-8" [ngClass]="{'baja':!movilV }">INSTAGRAM</h2>
+        </div>
 
+        <div *ngIf="!movil">
+            <h2 class="text-center pt-8">Seguinos en Instagram</h2>
+        </div>
 
-
-
-  
-
-
-  <!-- galeria carrusel -->
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
-  
-  
-
-  
+    </div>
 
 
 
@@ -53,13 +45,30 @@
 
 
 
+    <!-- galeria carrusel -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
 
-<!-- messi
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- messi
 <div class="elfsight-app-76314b7a-7749-4643-829f-b4b4095ff3f7"></div> -->
 
 
 
-<div class="elfsight-app-6c892db4-63d7-4c6d-acc5-f8493d136ba2"></div>
+    <div class="elfsight-app-6c892db4-63d7-4c6d-acc5-f8493d136ba2"></div>
 
 
 
