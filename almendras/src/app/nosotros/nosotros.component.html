@@ -2,17 +2,24 @@
 
 
 
-    <div class=" conocenosImagen" *ngIf="!movil">
+<div class=" conocenosImagen" *ngIf="!movil">
+  
+  <h1 class="text-center mb-0 tituloConocenos">
+    Conocenos
+    <hr class="new4">
+  </h1>
 
         <h1 class="text-center mb-0  tituloConocenos ">
             Conocenos
             <hr class="new4">
         </h1>
 
+  <div class="cotainer m-3" style="width: 50%;padding-top: 10%;">
 
-        <div class="cotainer">
+      <div class="row justify-content-md-center margenLeft">
 
-            <div class="row">
+        <div class="col-md-8 pd-4" style="padding-top:3%">
+         <div class="tituloSobreNosotros">Sobre nosotros</div>
 
                 <div class="col-4 pd-4">
 
@@ -25,7 +32,103 @@
 
     </div>
 
-    <div class="rectanguloEnBlanco">
+      <div class="row justify-content-md-center pt-md-4 margenLeft"   
+      [ngStyle]="{'display': calidad || tecnologia || compromiso ? 'none':'flex'}"
+      [ngClass]="{'animated slideOutLeft': calidad || tecnologia || compromiso}"
+      style="animation-delay: 1s;" >
+
+        <div class="col-md-8 pd-4">
+          <button type="button" class="btn btn-light" (click)="onclickHistoria()" >
+             <div class="row align-items-center justify-content-start">
+               <div class="col-md-2 align-self-end ">
+                <div class="numero">01</div>
+              </div>
+            <div class="col-md-2 align-self-end"> 
+               Historia
+            </div>
+
+            <div class="col-md-1 offset-md-7 align-self-start "> 
+              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" >
+            </div>
+
+          </div> 
+          </button>
+           
+        </div> <!-- col -->
+
+      </div><!-- row -->
+
+      <div class="row justify-content-md-center pt-md-3 margenLeft">
+
+        <div class="col-md-8 pd-4">
+          <button type="button" class="btn btn-light" (click)="onclickCompromiso()">
+             <div class="row align-items-center justify-content-start">
+               <div class="col-md-2 align-self-end ">
+                <div class="numero">02</div>
+              </div>
+            <div class="col-md-2 align-self-end"> 
+            Compromiso Regional
+            </div>
+            <div class="col-md-1 offset-md-7 align-self-start "> 
+              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" >
+            </div>
+
+          </div> 
+          </button>
+           
+        </div> <!-- col -->
+
+      </div>
+
+      <div class="row justify-content-md-center pt-md-3 margenLeft">
+
+        <div class="col-md-8 pd-4">
+          <button type="button" class="btn btn-light" (click)="onclickTecnologia()">
+             <div class="row align-items-center justify-content-start">
+               <div class="col-md-2 align-self-end ">
+                <div class="numero">03</div>
+              </div>
+            <div class="col-md-2 align-self-end"> 
+            Tecnología industrial
+            </div>
+            <div class="col-md-1 offset-md-7 align-self-start "> 
+              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" >
+            </div>
+          </div> 
+          </button>
+           
+        </div> <!-- col -->
+
+      </div>
+
+      <div class="row justify-content-md-center pt-md-3 margenLeft  ">
+
+        <div class="col-md-8 pd-4">
+          <button type="button" class="btn btn-light" (click)="onclickCalidad()">
+             <div class="row align-items-center justify-content-start">
+               <div class="col-md-2 align-self-end ">
+                <div class="numero">04</div>
+              </div>
+            <div class="col-md-2 align-self-end"> 
+            Calidad de productos
+            </div>
+            <div class="col-md-1 offset-md-7 align-self-start "> 
+              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" >
+            </div>
+          </div> 
+          </button>
+           
+        </div> <!-- col -->
+
+      </div>
+
+  </div>
+     
+</div>
+      
+<div class= "rectanguloEnBlanco">  
+  <h2 class="text-center pt-8">Seguinos en Instagram</h2>
+</div>
 
         <div *ngIf="movil">
             <h2 class="text-center pt-8" [ngClass]="{'baja':!movilV }">SEGUINOS EN </h2>

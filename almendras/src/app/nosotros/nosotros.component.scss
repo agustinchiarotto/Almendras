@@ -3,21 +3,39 @@ h1 {
     font-family: 'PlayfairDisplay-Black';
 }
 
-.textoNegro {
-    color: black;
+.tituloSobreNosotros{
+  font-family: 'Montserrat-SemiBold';
+  font-size: 40px;
+  color:#665048;
+} 
+
+.textoNegro{
+    color:black;
 }
 
-.numero {
-    columns: #665048;
-    ;
-    font-family: 'Montserrat-Bold';
-    font-size: 46.3;
+.numero{
+  color: #665048;;
+  font-family: 'Montserrat-Bold';
+  font-size: 30px;
 }
 
-.btn-link {
-    color: #87CFBE;
-    font-family: 'Montserrat-Medium';
-    font-size: 37.7;
+.margenLeft{
+  margin-left: -5%;
+}
+
+.btn-light{
+  width: 35vw;
+  height: 4vw;
+  margin-left: -1%;
+  font-family: 'Montserrat-Medium';
+  color:#87CFBE;
+  font-size: 25px;
+}
+
+.btn-link{
+  color:#87CFBE;
+  font-family: 'Montserrat-Medium';
+  font-size: 37.7;
 }
 
 hr.new4 {
@@ -29,7 +47,9 @@ img {
     max-width: 100%;
 }
 
-.fondoNegro {
+  
+
+.fondoNegro{
     background-color: black;
 }
 
