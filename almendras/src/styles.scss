@@ -126,8 +126,13 @@ html {
 }
 
 @font-face {
-    font-family: 'Montserrat-Medium';
+    font-family: 'Montserrat-MediumItalic';
     src: url(fuentes/Montserrat/Montserrat-MediumItalic.ttf)
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(fuentes/Montserrat/Montserrat-Medium.ttf) 
 }
 
 @font-face {

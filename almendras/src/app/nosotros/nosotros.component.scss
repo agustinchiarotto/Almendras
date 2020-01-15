@@ -4,14 +4,33 @@ h1{
 
 }
 
+.tituloSobreNosotros{
+  font-family: 'Montserrat-SemiBold';
+  font-size: 40px;
+  color:#665048;
+} 
+
 .textoNegro{
     color:black;
 }
 
 .numero{
-  columns: #665048;;
+  color: #665048;;
   font-family: 'Montserrat-Bold';
-  font-size: 46.3;
+  font-size: 30px;
+}
+
+.margenLeft{
+  margin-left: -5%;
+}
+
+.btn-light{
+  width: 35vw;
+  height: 4vw;
+  margin-left: -1%;
+  font-family: 'Montserrat-Medium';
+  color:#87CFBE;
+  font-size: 25px;
 }
 
 .btn-link{
@@ -30,6 +49,8 @@ hr.new4 {
   img{
       max-width: 100%;
   }
+
+  
 
 .fondoNegro{
     background-color: black;
