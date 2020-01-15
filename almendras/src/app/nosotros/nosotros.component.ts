@@ -1,9 +1,60 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+  // ...
+} from '@angular/animations';
 
 @Component({
   selector: 'app-nosotros',
   templateUrl: './nosotros.component.html',
-  styleUrls: ['./nosotros.component.scss']
+  styleUrls: ['./nosotros.component.scss'],
+  animations: [
+
+    trigger('triger', [
+      // ...
+      state('none', style({
+
+        display:'none',
+
+      })),
+      state('flex', style({
+
+        display: 'flex',
+
+      })),
+      transition('none => flex', [
+        animate('0.5s')
+      ]),
+      transition('flex => none', [
+        animate('0.5s')
+      ]),
+    ]),
+    trigger('up', [
+      // ...
+      state('none', style({
+
+        display:'none',
+
+      })),
+      state('flex', style({
+
+        display: 'flex',
+
+      })),
+      transition('none => flex', [
+        animate('0.7s')
+      ]),
+      transition('flex => none', [
+        animate('0.7s')
+      ]),
+    ]),
+  ]
+
+
 })
 export class NosotrosComponent implements OnInit {
 

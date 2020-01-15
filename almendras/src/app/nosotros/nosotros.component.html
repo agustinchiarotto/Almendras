@@ -10,7 +10,7 @@
   </h1>
 
 
-  <div class="cotainer m-3" style="width: 50%;padding-top: 10%;">
+<!--  <div class="cotainer m-3" style="width: 50%;padding-top: 10%;">
 
       <div class="row justify-content-md-center margenLeft">
 
@@ -22,9 +22,10 @@
       </div>
 
       <div class="row justify-content-md-center pt-md-4 margenLeft"   
-      [ngStyle]="{'display': calidad || tecnologia || compromiso ? 'none':'flex'}"
+  
       [ngClass]="{'animated slideOutLeft': calidad || tecnologia || compromiso}"
-      style="animation-delay: 1s;" >
+      [@triger]="calidad || tecnologia || compromiso ? 'none' : 'flex'" 
+       >
 
         <div class="col-md-8 pd-4">
           <button type="button" class="btn btn-light" (click)="onclickHistoria()" >
@@ -43,14 +44,20 @@
           </div> 
           </button>
            
-        </div> <!-- col -->
+        </div> 
 
-      </div><!-- row -->
+      </div>
 
-      <div class="row justify-content-md-center pt-md-3 margenLeft">
+      <div class="row justify-content-md-center pt-md-3 margenLeft"
+      [@triger]="calidad || tecnologia || historia ? 'none' : 'flex'" 
+      [ngClass]="{'animated slideOutLeft': calidad || tecnologia || historia}" 
+      >
 
         <div class="col-md-8 pd-4">
-          <button type="button" class="btn btn-light" (click)="onclickCompromiso()">
+          <button type="button" class="btn btn-light" (click)="onclickCompromiso()"
+          
+        
+          >
              <div class="row align-items-center justify-content-start">
                <div class="col-md-2 align-self-end ">
                 <div class="numero">02</div>
@@ -65,14 +72,20 @@
           </div> 
           </button>
            
-        </div> <!-- col -->
+        </div> 
 
       </div>
 
-      <div class="row justify-content-md-center pt-md-3 margenLeft">
+      <div class="row justify-content-md-center pt-md-3 margenLeft"
+      [@triger]="calidad || compromiso || historia ? 'none' : 'flex'" 
+      [ngClass]="{'animated slideOutLeft': calidad || compromiso || historia}" 
+      >
 
         <div class="col-md-8 pd-4">
-          <button type="button" class="btn btn-light" (click)="onclickTecnologia()">
+          <button type="button" class="btn btn-light" (click)="onclickTecnologia()"
+          
+        
+          >
              <div class="row align-items-center justify-content-start">
                <div class="col-md-2 align-self-end ">
                 <div class="numero">03</div>
@@ -86,14 +99,21 @@
           </div> 
           </button>
            
-        </div> <!-- col -->
+        </div>
 
       </div>
 
-      <div class="row justify-content-md-center pt-md-3 margenLeft  ">
+      <div class="row justify-content-md-center pt-md-3 margenLeft  "
+      [@triger]="compromiso || tecnologia || historia ? 'none' : 'flex'" 
+      [ngClass]="{'animated slideOutLeft': compromiso || tecnologia || historia}" 
+      >
 
         <div class="col-md-8 pd-4">
-          <button type="button" class="btn btn-light" (click)="onclickCalidad()">
+          <button type="button" class="btn btn-light" (click)="onclickCalidad()"
+          
+          
+
+          >
              <div class="row align-items-center justify-content-start">
                <div class="col-md-2 align-self-end ">
                 <div class="numero">04</div>
@@ -102,17 +122,118 @@
             Calidad de productos
             </div>
             <div class="col-md-1 offset-md-7 align-self-start "> 
-              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" >
+              <img src="../../assets/imagenes/conocenos/flechadown.png" size="350%" style="max-width: 350%;" 
+              *ngIf="!calidad">
+              <img src="../../assets/imagenes/conocenos/flechaup.png" size="350%" style="max-width: 350%;" 
+              *ngIf="calidad">
+
+       
+
+
             </div>
           </div> 
           </button>
            
-        </div> <!-- col -->
+        </div> 
 
       </div>
 
-  </div>
+      <div class="row align-items-center justify-content-start animated wow fadeInUp "
+      *ngIf="calidad">
+        <div class="col-md-10 offset-1">
+            <p class="pt-4 ml-4">Las plantas de almendra Guara 
+              y las nueces Chandler, poseedoras 
+              de múltiples propiedades benéficas crecen
+               fuertes y con un rendimiento creciente. 
+              <br>
+              Se ha comenzado en la elaboración de productos 
+               que pueda mostrar todo el potencial de sabores que 
+               los frutos secos pueden brindar en la diversidad de variedades.</p>
+        </div>
+
+
+      </div>
+
+  </div>  -->
      
+<div class="container m-3" style="padding-top: 10%; margin-left: 10%;">
+
+  <div class="col-md-6 col-sm-12 col-xs-12 display-table wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;margin-left: 6%;">
+    <div class="display-table-cell-vertical-middle padding-thirteen-all md-padding-ten-all sm-padding-six-all xs-padding-50px-tb xs-no-padding-lr">
+        <h5 class="alt-font text-extra-dark-gray sm-text-center margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom " style="    padding-bottom: 5%;">
+          <span class="tituloSobreNosotros pb-3">Sobre nosotros</span></h5>
+        <div class="panel-group accordion-style2" id="accordion">
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
+                        <div class="panel-title">
+                            <span class="numero">01</span>
+                            <span class="textoBotones ml-4">Historia</span>
+                            <i class="fas pull-right text-extra-dark-gray fa-angle-down ml-4" style="padding-left: 55%;"></i>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body"> En el año 2008, un grupo de amigos incursionó en la producción de frutos secos, una actividad que aún 12 años después les sigue entusiasmando. En este tiempo se dedicaron a mejorar, años tras año, en esta actividad que les resulta apasionante. 
+</div>
+                </div>
+            </div>
+            
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false">
+                        <div class="panel-title">
+                            <span class="numero">02</span>
+                            <span class="textoBotones ml-4">Compromiso regional</span>
+                            <i class="indicator fas pull-right text-extra-dark-gray fa-angle-down" style="padding-left: 30%;"></i>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">En Sargento Vidal, municipio de Campo Grande, en la norpatagonia recuperaron más de 70 hectáreas abandonas, dándoles un destino de producción, y al mismo generando puesto de trabajo para los habitantes de la zona. </div>
+                </div>
+            </div>
+          
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false">
+                        <div class="panel-title">
+                            <span class="numero">03</span>
+                            <span class="textoBotones ml-4">Tecnologia industrial</span>
+                            <i class="indicator fas pull-right text-extra-dark-gray fa-angle-down" style="padding-left: 32%;"></i>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">Al querer acondicionar los productos para su consumo, instalaron una planta de partido única en la zona. Ésta fue emplazada en el establecimiento ubicado en la primer plantación de nogales. </div>
+                </div>
+            </div>
+          
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false">
+                        <div class="panel-title">
+                            <span class="numero">04</span>
+                            <span class="textoBotones ml-4">Calidad de productos</span>
+                            <i class="indicator fas pull-right text-extra-dark-gray fa-angle-down" style="padding-left: 30%;"></i>
+                        </div>
+                    </a>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">Las plantas de almendra Guara y las nueces Chandler, poseedoras de múltiples propiedades benéficas crecen fuertes y con un rendimiento creciente. Se ha comenzado en la elaboración de productos que pueda mostrar todo el potencial de sabores que los frutos secos pueden brindar en la diversidad de variedades. </div>
+                </div>
+            </div>
+     
+ 
+      </div>
+    </div>
+</div>
+
+</div> 
+
+
+
 </div>
       
 <div class= "rectanguloEnBlanco">  
@@ -120,17 +241,13 @@
 </div>
 
 
-
-
-
   
 
 
-  <!-- galeria carrusel -->
+ 
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
   
   
 
