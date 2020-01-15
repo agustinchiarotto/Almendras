@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent implements OnInit {
-
+  movil:boolean = false;
+  ancho;
   constructor() { }
 
   ngOnInit() {
+    this.ancho=window.innerWidth;
+    if(this.ancho<414){
+      this.movil=true
+    }
   }
 
 }

@@ -2,7 +2,7 @@
 
 var nodemailer = require('nodemailer');
 
-
+ 
 function sendMail (req, res){
   var params = req.body
   var emisor = params.email // aca va el mail del comentario

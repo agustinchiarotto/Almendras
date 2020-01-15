@@ -43,8 +43,8 @@ export class ContactoComponent implements OnInit {
     this.contactoService.enviarMail(this.model.nombre,this.model.apellido,this.model.email,this.model.tel,this.model.localidad,this.model.mensaje)
 
     Swal.fire({
-      title: 'Muchas Gracias!',
-      text: 'Se ha enviado un mensaje. Pronto nos contactaremos con vos!',
+      title: '¡Muchas Gracias!',
+      text: 'Se ha enviado un mensaje. Pronto nos contactaremos con vos',
       type: 'success',
       showConfirmButton: false,
       timer: 3200

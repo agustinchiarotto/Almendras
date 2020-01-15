@@ -8,10 +8,22 @@ h1{
     color:black;
 }
 
+.numero{
+  columns: #665048;;
+  font-family: 'Montserrat-Bold';
+  font-size: 46.3;
+}
+
+.btn-link{
+  color:#87CFBE;
+  font-family: 'Montserrat-Medium';
+  font-size: 37.7;
+}
+
 hr.new4 {
   
     width: 30%;
-    border: 2px solid rgb(237,196,93);
+    border: 2px solid #87CFBE;
     
   }
 
@@ -51,6 +63,31 @@ hr.new4 {
     
     
   }
+
+  .rectanguloEnBlanco{
+    height: 13vw;
+   
+  }
+
+  h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 52px;
+    color: #665048;
+    line-height: 54px;
+  }
+
+.conocenosImagen{
+  background: url('src/assets/imagenes/conocenos/conocenos_fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+ // background-attachment: fixed;
+  background-position: center top;
+  height: 73vw;
+  margin-top: -3.5%;
+  
+}
+
+
 .atras
 {
   z-index: 1;
@@ -98,7 +135,9 @@ hr.new4 {
   position: absolute;
 }
 
-
+.pt-8{
+  padding-top: 6vw;
+}
 
 //hasta aca
   .tarjeta{
@@ -108,7 +147,8 @@ hr.new4 {
   .tituloConocenos
   {
     font-family: 'Montserrat-SemiBold';
-    font-size: 67px;
+    font-size: 52px;
+    padding-top: 3%;
     color: rgb(119,87,70)
   }
   .tituloTexto

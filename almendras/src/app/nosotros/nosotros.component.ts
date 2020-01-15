@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
-  nosotros:boolean=false;
+  movil:boolean=false;
   ancho:any;
 
   constructor() { }
@@ -18,7 +18,7 @@ export class NosotrosComponent implements OnInit {
     console.log("El ancho es: "+this.ancho);
     if(this.ancho<414)
     {
-        this.nosotros=true;
+        this.movil=true;
     }
   }
   
