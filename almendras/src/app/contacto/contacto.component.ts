@@ -29,6 +29,10 @@ export class ContactoComponent implements OnInit {
     {
       this.conta=true;
     }
+    if(this.ancho<=415)
+    {
+      this.conta=true;
+    }
   }
 
 
