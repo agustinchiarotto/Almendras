@@ -9,10 +9,6 @@
     <hr class="new4">
   </h1>
 
-        <h1 class="text-center mb-0  tituloConocenos ">
-            Conocenos
-            <hr class="new4">
-        </h1>
 
 <!--  <div class="cotainer m-3" style="width: 50%;padding-top: 10%;">
 
@@ -185,7 +181,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" data-parent="#accordion">
                     <div class="panel-body"> En el año 2008, un grupo de amigos incursionó en la producción de frutos secos, una actividad que aún 12 años después les sigue entusiasmando. En este tiempo se dedicaron a mejorar, años tras año, en esta actividad que les resulta apasionante. 
 </div>
                 </div>
@@ -201,7 +197,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" data-parent="#accordion">
                     <div class="panel-body">En Sargento Vidal, municipio de Campo Grande, en la norpatagonia recuperaron más de 70 hectáreas abandonas, dándoles un destino de producción, y al mismo generando puesto de trabajo para los habitantes de la zona. </div>
                 </div>
             </div>
@@ -216,7 +212,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" data-parent="#accordion">
                     <div class="panel-body">Al querer acondicionar los productos para su consumo, instalaron una planta de partido única en la zona. Ésta fue emplazada en el establecimiento ubicado en la primer plantación de nogales. </div>
                 </div>
             </div>
@@ -231,7 +227,7 @@
                         </div>
                     </a>
                 </div>
-                <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" data-parent="#accordion">
                     <div class="panel-body">Las plantas de almendra Guara y las nueces Chandler, poseedoras de múltiples propiedades benéficas crecen fuertes y con un rendimiento creciente. Se ha comenzado en la elaboración de productos que pueda mostrar todo el potencial de sabores que los frutos secos pueden brindar en la diversidad de variedades. </div>
                 </div>
             </div>
@@ -248,7 +244,7 @@
 </div>
       
 <div class= "rectanguloEnBlanco">  
-  <h2 class="text-center pt-8">Seguinos en Instagram</h2>
+  <h2  *ngIf="!movil" class="text-center pt-8">Seguinos en Instagram</h2>
 </div>
 
         <div *ngIf="movil">
@@ -256,11 +252,9 @@
             <h2 class="text-center pt-8" [ngClass]="{'baja':!movilV }">INSTAGRAM</h2>
         </div>
 
-        <div *ngIf="!movil">
-            <h2 class="text-center pt-8">Seguinos en Instagram</h2>
-        </div>
+        
 
-    </div>
+ 
 
 
 
