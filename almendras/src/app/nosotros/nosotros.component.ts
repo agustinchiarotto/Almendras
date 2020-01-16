@@ -64,6 +64,7 @@ export class NosotrosComponent implements OnInit {
   compromiso = false;
   tecnologia = false;
   calidad = false;
+  click = false;
 
   constructor() { }
 
@@ -103,6 +104,10 @@ export class NosotrosComponent implements OnInit {
     this.tecnologia=false;
     this.calidad=true;
     this.compromiso=false;
+  }
+
+  clickearon(){
+    this.click = true;
   }
 
 
