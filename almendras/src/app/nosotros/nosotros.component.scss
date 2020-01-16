@@ -13,6 +13,17 @@ h1 {
     color:black;
 }
 
+.arribaCalidad{
+  margin-top: -30%;
+
+}
+
+p{
+  font-family: 'Montserrat-Medium';
+  color:black;
+  font-size: 18px;
+}
+
 .numero{
   color: #665048;;
   font-family: 'Montserrat-Bold';
@@ -36,6 +47,12 @@ h1 {
   color:#87CFBE;
   font-family: 'Montserrat-Medium';
   font-size: 37.7;
+}
+
+.textoBotones{
+  color:#87CFBE;
+  font-family: 'Montserrat-Medium';
+  font-size: 20px;
 }
 
 hr.new4 {
@@ -208,68 +225,26 @@ hr.new5 {
     z-index: 0;
 }
 
-//mobile
-@media only screen and (max-width: 414px) {
-    hr.new4 {
-        width: 70%;
-        border: 2px solid rgb(237, 196, 93);
-    }
-    .efectoAlmendra {
-        background: url('src/assets/imagenes/almendrasBaja.png');
-        background-attachment: fixed;
-        width: 100%;
-        //background: no-repeat;
-        //background-size: 100%;
-        z-index: 3;
-        position: relative;
-        //background: transparent;
-    }
-    .aux {
-        display: none;
-    }
-    .aux2 {
-        text-align: left;
-        padding-left: 40px;
-        max-width: 50%;
-    }
-    .tituloConocenos {
-        font-family: 'Montserrat-SemiBold';
-        font-size: 30px;
-        color: rgb(119, 87, 70)
-    }
-    .tituloTexto {
-        margin-top: 7%;
-        font-family: "Montserrat-SemiBold";
-        font-size: 20px;
-        color: rgb(237, 196, 93);
-    }
-    .texto1 {
-        font-family: "Montserrat-Regular";
-        font-size: 15px;
-        color: rgb(119, 87, 70);
-    }
-    .texto2 {
-        margin-top: 5px;
-        font-family: "Montserrat-Light";
-        font-size: 12px;
-        color: rgb(119, 97, 70);
-    }
-    .texto3 {
-        margin-top: 5px;
-        font-family: "Montserrat-SemiBold";
-        font-size: 15px;
-        color: rgb(119, 97, 70);
-    }
-    .col-12 {
-        // align-items: center;
-        padding-left: 30px;
-        max-width: 100%;
-    }
-    h2 {
-        font-size: 33px;
-        margin-bottom: -11%
-    }
-    .elfsight-app-6c892db4-63d7-4c6d-acc5-f8493d136ba2 {
-        padding-top: 23%
-    }
-}
+
+
+
+
+
+/* accordion style 2 */
+.accordion-style2 .panel {background: transparent; border: none; margin-bottom: 15px; box-shadow: none;}
+.accordion-style2 .panel-title {background: transparent; border: none }
+.accordion-style2 .panel .panel-heading { background: #fff; border-radius:0; padding:5px 15px 5px }
+.accordion-style2 .panel-body{padding: 25px 20px 20px; border-top:none  }
+.accordion-style2 .panel-heading i { font-size: 25px; margin: 0;}
+.accordion-style2 .panel-title {padding: 0;}
+.accordion-style2 .tab-tag { font-size: 20px; padding: 0; margin-right: 7px; display: inline-block; vertical-align: top; }
+.accordion-style2 a, .accordion-style2 a:hover, .accordion-style2 a:hover i { color: #fff;;}
+.accordion-style2 a:hover i { color: black;}
+.accordion-style2  i { color: black;}
+.accordion-style2 .panel-default:last-child {border-bottom: 1px solid rgba(0, 0, 0, 0); margin-bottom: 0;}
+.accordion-style2 { margin-bottom: 0;}
+
+
+
+
+  
