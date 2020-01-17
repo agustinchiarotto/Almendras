@@ -11,10 +11,11 @@ h1 {
 
 .tituloOrgullosos{
     font-family: 'Montserrat-Medium';
-    font-size: 28px;
+    font-size: 22px;
     color:#665048;
     text-align: center;
-    padding-top: 6%;
+    padding-top: 13%;
+    margin-left: -20%;
 }
 
 .margen-top{
@@ -120,10 +121,11 @@ h2 {
 .conocenosImagen {
     background: url('src/assets/imagenes/conocenos/nosotros01.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+  //  background-size: 100% 100%;
     // background-attachment: fixed;
     background-position: center;
     background-position-y: 12vw;
+    background-size: contain;
     height: 53vw;
     margin-top: -3.5%;
 }
