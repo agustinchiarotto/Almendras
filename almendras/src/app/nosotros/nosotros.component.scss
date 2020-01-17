@@ -117,12 +117,23 @@ h2 {
 }
 
 .conocenosImagen {
-    background: url('src/assets/imagenes/conocenos/conocenos_fondo.jpg');
+    background: url('src/assets/imagenes/conocenos/nosotros01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // background-attachment: fixed;
+    background-position: center;
+    background-position-y: 12vw;
+    height: 53vw;
+    margin-top: -3.5%;
+}
+
+.conocenosImagen2 {
+    background: url('src/assets/imagenes/conocenos/nosotros02.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     // background-attachment: fixed;
     background-position: center top;
-    height: 73vw;
+    height: 15vw;
     margin-top: -3.5%;
 }
 
