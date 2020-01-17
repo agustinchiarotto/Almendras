@@ -3,7 +3,9 @@
     padding: 5%;">
         <div></div>
 
-        <div class="row justify-content-md-center" style="margin-top:20%" *ngIf="!movilV">
+        <div class="row justify-content-md-center"  *ngIf="!movilV  "
+        [ngClass]="{'margenChico':chico,'margenGrande':movilV || tabletH}" 
+        >
             <div class="col-4 align-self-center">
                 <div class="row justify-content-md-center">
                     <img src="../../assets/imagenes/footer/region.png" alt="" style="width:30%" class="animated wow flipInY delay-1s">
@@ -36,7 +38,7 @@
 
         </div>
 
-        <div class="row " [ngClass]="{'primerRow':!movilV }">
+        <div class="row " [ngClass]="{'primerRow':!movilV && !chico,'chico':chico }">
 
             <div class="col-5 align-self-center pt-5 pl-10" [ngClass]="{'col-10 align-self-start celular':movilV }">
                 <div class="row comu">
@@ -49,7 +51,7 @@
 
                 </div>
                 <div class="row">
-                    <div class="col-5 " *ngIf="!movilV && !tabletH">
+                    <div class="col-5 " *ngIf="chico">
 
                     </div>
                     <div class="col-7" [ngClass]="{'col-10 align-self-center celular':movilV }">
@@ -115,7 +117,7 @@
                 <div class="row face">
 
                     <a href="https://es-la.facebook.com/Buenos-Vientos-1846438855623224/" target="_blank">
-                        <img src="../../assets/imagenes/footerweb-05.png" alt=""></a>
+                        <img src="../../assets/imagenes/footerweb-05.png" alt="" ></a>
 
 
 

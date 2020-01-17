@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-
+  chico:boolean=false;
   movilV:boolean=false;
    anio:number;
    ancho:any;
@@ -22,9 +22,17 @@ export class FooterComponent implements OnInit {
     if(this.ancho<414){
       this.movilV=true
     }
-    if(this.ancho=1024){
-      this.tabletH=true
+    if(this.ancho>415 && this.ancho<1400){
+      //this.tabletH=true
+      this.chico = true;
+
     }
+    if(this.ancho>1400){
+      this.tabletH=true
+     
+    }
+
+    console.log("movil chico tablet"+this.movilV+ " "+ this.chico+" "+this.tabletH)
   }
 
 }
