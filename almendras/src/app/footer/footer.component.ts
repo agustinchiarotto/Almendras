@@ -27,10 +27,12 @@ export class FooterComponent implements OnInit {
       this.chico = true;
 
     }
-    if(this.ancho=>1400){
+    if(this.ancho>1400){
       this.tabletH=true
      
     }
+
+    console.log("movil chico tablet"+this.movilV+ " "+ this.chico+" "+this.tabletH)
   }
 
 }
