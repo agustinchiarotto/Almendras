@@ -72,8 +72,7 @@
 
 
         <div *ngIf="movil">
-            <div class="container imagenes" style="margin-top:-3%;
-">
+            <div class="container imagenes" style="margin-top:-3%;">
                 <div class="row justify-content-md-center">
                     <div class="col nopadding ml-4 center">
 
@@ -84,7 +83,7 @@
                         <a href="#salados"> <img src="assets/imagenes/conocenos2.gif" alt=""> </a>
 
                     </div>
-                    <div class="col nopadding center">
+                    <div class="col nopadding center derechaa">
                         <a href="#naturales"> <img src="assets/imagenes/conocenos3.gif" alt=""> </a>
 
                     </div>
@@ -103,9 +102,17 @@
         <h1></h1>
     </div>
     <div class="w3-container m-1 align-items-center fondo" id="dulces" style=" max-width: 100%;">
-        <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
-            Dulces
-        </h1>
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
+                DULCES
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloDulce" style="max-width: 100%">
+                Dulces
+            </h1>
+        </div>
+
         <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Tardes tentadoras
         </h2>
 
@@ -164,9 +171,17 @@
         <h1></h1>
     </div>
     <div class="w3-container m-1 align-items-center fondo" id="salados" style=" max-width: 100%;">
-        <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
-            Salados
-        </h1>
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
+                SALADOS
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloSalado " style="max-width: 100%">
+                Salados
+            </h1>
+        </div>
+
         <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Deliciosos encuentros</h2>
         <div id="parent" *ngIf="!mostrarSalados">
             <div class="child" *ngFor="let salado of salados">
@@ -213,9 +228,18 @@
         <h1></h1>
     </div>
     <div class="w3-container m-1 align-items-center fondo" id="naturales" style=" max-width: 100%;">
-        <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
-            Naturales
-        </h1>
+        <div *ngIf="movil">
+            <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
+                NATURALES
+            </h1>
+        </div>
+        <div *ngIf="!movil">
+            <h1 class="text-center mt-5 tituloNaturales" style="max-width: 100%;">
+                Naturales
+            </h1>
+
+        </div>
+
         <h2 class="text-center textoProductosNegrita colorMarron" style="max-width: 100%; font-size: 20px">Sabor y equilibrio natural</h2>
         <div id="parent" *ngIf="!mostrarNaturales">
             <div class="child" *ngFor="let natural of naturales let i = index">

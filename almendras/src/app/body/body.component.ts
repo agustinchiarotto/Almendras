@@ -12,7 +12,10 @@ export class BodyComponent implements OnInit {
 
   ngOnInit() {
     this.ancho=window.innerWidth;
-    if(this.ancho<415){
+    if(this.ancho<416){
+      this.movil=true
+    }
+    if(this.ancho<813){
       this.movil=true
     }
   }

@@ -263,19 +263,19 @@ img {
     }
     .tituloDulce {
         font-family: "Montserrat-SemiBold";
-        font-size: 42px;
+        font-size: 38px;
         color: rgb(87, 154, 160);
         margin-bottom: 0%;
     }
     .tituloSalado {
         font-family: 'Montserrat-SemiBold';
-        font-size: 42px;
+        font-size: 38px;
         color: rgb(179, 85, 42);
         margin-bottom: 0%;
     }
     .tituloNaturales {
         font-family: 'Montserrat-SemiBold';
-        font-size: 42px;
+        font-size: 38px;
         color: rgb(83, 105, 26);
         margin-bottom: 0%;
     }
@@ -293,10 +293,13 @@ img {
     }
     img {
         max-width: 100%;
-        margin: 12%;
+        margin-left: 12%;
     }
     .imagenes {
         padding: 0%;
         margin: 0%;
+    }
+    .derechaa {
+        margin-right: 0%;
     }
 }

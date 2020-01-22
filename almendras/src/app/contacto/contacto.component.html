@@ -5,8 +5,13 @@
             <div class="col-5 col-centered " [ngClass]="{'col-12 celular':conta }">
 
 
-                <div class=" tituloMensaje ml-4 wow animated fadeInLeft">¡Envianos un mensaje!</div>
-                <div class="text-center textoMensaje wow animated fadeInLeft">
+                <div class=" tituloMensaje ml-4 wow animated fadeInLeft" *ngIf="conta">¡ENVIANOS UN MENSAJE!</div>
+                <div class="text-center textoMensaje wow animated fadeInLeft" *ngIf="conta">
+
+                    NOS ENCANTA SABER TUS OPINIONES.
+                </div>
+                <div class=" tituloMensaje ml-4 wow animated fadeInLeft" *ngIf="!conta">¡Envianos un mensaje!</div>
+                <div class="text-center textoMensaje wow animated fadeInLeft" *ngIf="!conta">
 
                     Nos encanta saber tus opiniones.
                 </div>
