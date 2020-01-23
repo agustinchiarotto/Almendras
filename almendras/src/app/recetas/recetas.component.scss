@@ -1,32 +1,41 @@
 /* equal card height */
 .resetas-section {
-    padding-top: 6vh; 
-    padding-bottom: 6vh; 
+    padding-top: 10vw; 
+    padding-bottom: 5vw; 
+    margin-bottom: 5vw;
     background-size:cover; 
     background-image: url('https://image.freepik.com/free-vector/close-up-black-marble-background_53876-58926.jpg');
 }
+
+.anchor{
+    display: block;
+    height: 13vw; /*same height as header*/
+    margin-top: -13vw; /*same height as header*/
+    visibility: hidden;
+  }
 
 .card {
     width: 80% !important;
 }
 .tituloTexto
 {
-    
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 57px;
+    padding-top: 1.6%;
+    line-height:20px;
+    font-family: "Montserrat-SemiBold";
+    font-size: 50px;
     color: rgb(255 ,255,255);
 
 }
 .texto1
 {
-    margin-top: 5%;
+   // margin-top: 5%;
     font-family: "Montserrat-SemiBold";
     font-size: 22px;
     color: rgb(255 ,255,255);
 }
 .texto2
 {
-    margin-top: 7%;
+   // margin-top: 7%;
     font-family: "Montserrat-Light";
     font-size: 18px;
     color: rgb(255 ,255,255);
@@ -34,7 +43,7 @@
 .verTodo
 {
     font-family: "Montserrat-SemiBold";
-    font-size: 10px;
+    font-size: 12px;
     line-height:30px;
 }
 .tiempo
@@ -47,6 +56,31 @@
  
 }
 
+.carousel-control.left, .carousel-control.right {
+    left: 0;
+    z-index: 1;
+  }
+
+.col-6{
+    max-height: 365px;
+}
+
+img{
+    max-height: 225px;
+}
+
+h5{
+    font-family: "Montserrat-SemiBold";
+    font-size: medium;
+}
+
+p{
+    font-size: 11px;
+    font-family: "Montserrat-Light";
+    
+    
+
+}
 
 @media screen and (max-width: 414px) {
    
