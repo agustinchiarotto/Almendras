@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +17,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import {ButtonModule} from 'primeng/button';
+import { ButtonModule} from 'primeng/button';
 
 
 
@@ -25,6 +26,7 @@ import {ContactoService } from './contacto/contacto.service'
 
 import { AgmCoreModule } from '@agm/core';
 import { from } from 'rxjs';
+import { RecetasNuevoComponent } from './recetasNuevo/recetasNuevo.component';
 
 @NgModule({
   declarations: [
@@ -36,13 +38,15 @@ import { from } from 'rxjs';
     RecetasComponent,
     ContactoComponent,
     GoogleMapComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    RecetasNuevoComponent
   ],
   imports: [FormsModule ,HttpModule,    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     ButtonModule,
+    RouterModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCiUl0t3_wkX1n_bRWaUhsKrPoQKucR9co'
     }),

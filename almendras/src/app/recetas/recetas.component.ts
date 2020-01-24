@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
@@ -9,11 +12,11 @@ import { Component, OnInit } from '@angular/core';
 export class RecetasComponent implements OnInit {
   receta:boolean=false;
   ancho:any;
-  constructor() { }
+  constructor( private _rotuer:Router) { }
 
   ngOnInit() {
     this.ancho=window.innerWidth;
-    console.log("El ancho es: "+this.ancho);
+   
     if(this.ancho<414)
     {
         this.receta=true;
