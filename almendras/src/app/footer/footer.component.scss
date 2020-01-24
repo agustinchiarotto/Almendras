@@ -7,6 +7,10 @@
         background-size: 100% 100%;
     }
     
+    .paddgeneral {
+        padding: 5%;
+    }
+    
     .margenCompu {
         margin-left: 4%;
     }
@@ -192,7 +196,7 @@
             //background: url("../../assets/imagenes/footerweb-07.png");
             background-size: contain;
             background-repeat: no-repeat;
-            background-color: black;
+            background-color: rgb(42, 29, 22);
         }
         .footer2 {
             background-color: black;
@@ -209,7 +213,33 @@
             color: white;
             text-align: left;
             font-family: "Montserrat-Regular";
-            font-size: 16px;
+            font-size: 15px;
+        }
+        .comunicate {
+            padding-left: 7%;
+            padding-right: 0%
+        }
+        .seguinos {
+            text-align: start;
+            padding-left: 3.5vh;
+            font-size: 24px;
+            padding-top: 15%;
+        }
+        .face {
+            padding-left: 4%;
+        }
+        .insta {
+            padding-left: 1.5%;
+            margin-top: 0vh;
+        }
+        .pantchico {
+            padding-right: 0%;
+        }
+        .rioN {
+            margin-top: -5%;
+        }
+        .pt-especial {
+            padding-top: 17%;
         }
         .pt-10 {
             padding-top: 0vh;
@@ -219,6 +249,18 @@
         }
         img:hover {
             //  box-shadow: 10px 10px 5px #000000;
+        }
+        .margenCompu {
+            margin-left: 0%;
+        }
+        .chico {
+            padding-top: 17%;
+        }
+        .margenChico {
+            margin-top: 13%;
+        }
+        .margenGrande {
+            margin-top: 20%;
         }
     }
     
@@ -370,7 +412,7 @@
             margin-left: 0vh;
         }
         .pt-especial {
-            padding-top: 54%;
+            padding-top: 36%;
         }
         img:hover {
             // box-shadow: 10px 10px 5px #000000;
@@ -440,34 +482,39 @@
     }
     
     @media only screen and (max-width: 414px) and (orientation: portrait) {
+        .paddgeneral {
+            padding: 13%;
+        }
         .row {
             margin-left: 0%;
             margin-right: 0%;
         }
         .comu {
-            padding-left: 1.5vh;
+            padding-left: 0vh;
         }
         .comunicate {
             text-align: start;
-            padding-left: 1.5vh;
-            margin-top: 33%;
+            padding-left: 0vh;
+            margin-top: 41%;
         }
         .seguinos {
             font-size: 17px;
+            padding-top: 0%;
         }
         .nosotros {
             margin-top: -16%;
         }
         .face {
-            padding-left: 3vh;
+            padding-left: 1vh;
         }
         .insta {
-            padding-left: 3vh;
-            margin-top: -0.5vh;
+            padding-left: 12vh;
+            margin-top: -17%;
         }
         .seguinos {
             text-align: start;
             padding-left: 2.5vh;
+            margin-top: -3%;
         }
         .footer3 {
             background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
@@ -482,6 +529,7 @@
             color: white;
             font-family: "Montserrat-Black";
             font-size: 17px;
+            /*  padding-top: 0%; */
         }
         h2 {
             color: white;
@@ -491,8 +539,9 @@
             text-align: left;
             font-family: "Montserrat-Regular";
             font-size: 12px;
-            margin-bottom: 6%;
-            margin-top: -11%;
+            margin-bottom: 0%;
+            margin-top: 0%;
+            margin-left: 3%;
         }
         .pt-10 {
             padding-top: 0vh;

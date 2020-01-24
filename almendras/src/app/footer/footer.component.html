@@ -1,6 +1,7 @@
 <footer class="footer3 text-center">
-    <div class="containter pt-5" style="
-    padding: 5%;">
+    <div class="containter pt-5 paddgeneral">
+        <!-- style="
+            padding: 5%;" -->
         <div></div>
 
         <div class="row justify-content-md-center" *ngIf="!movilV  " [ngClass]="{'margenChico':chico,'margenGrande':movilV || tabletH}">
@@ -40,7 +41,7 @@
 
             <div class="col-5 align-self-center pt-5 pl-10" [ngClass]="{'col-10 align-self-start celular':movilV }">
                 <div class="row comu">
-                    <div class="col-9" *ngIf="!movilV">
+                    <div class="col-9 comunicate" *ngIf="!movilV">
                         <p>¡Comunicate con nosotros!</p>
                     </div>
                     <div class="col-9 comunicate" *ngIf="movilV">
@@ -92,7 +93,7 @@
                 </div>
             </div>
             <!-- Logos redes sociales -->
-            <div class="col-4 align-self-center mt-5" *ngIf='!movilV'>
+            <div class="col-4 align-self-center mt-1" *ngIf='!movilV'>
                 <div *ngIf="!chico">
                     <div class="row justify-content-center">
                         <div class="col-6 ml-3">
@@ -141,6 +142,19 @@
                     </div>
 
                 </div>
+
+                <!-- <div class="col-2 offset-md-4 face">
+                    <a href="https://es-la.facebook.com/Buenos-Vientos-1846438855623224/" target="_blank">
+                        <img src="../../assets/imagenes/footerweb-05.png" alt=""></a>
+                </div>
+                <div class="col-2  insta">
+                    <a href="https://www.instagram.com/buenosvientospatagonia/" target="_blank">
+
+                        <img src="../../assets/imagenes/footerweb-06.png" alt=""></a>
+                </div> -->
+
+
+
                 <div class="row face">
 
                     <a href="https://es-la.facebook.com/Buenos-Vientos-1846438855623224/" target="_blank">
@@ -160,7 +174,7 @@
 
             <!-- nosotros -->
             <div class="col-3 align-self-center pt-5" *ngIf="!movilV">
-                <div class="row pt-5" *ngIf="!chico">
+                <div class="row pt-especial" *ngIf="!chico">
                     <h5>
                         Diseñado por
                         <br>
