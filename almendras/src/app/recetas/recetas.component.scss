@@ -1,137 +1,137 @@
 /* equal card height */
+
 .resetas-section {
-    padding-top: 10vw; 
-    padding-bottom: 5vw; 
+    padding-top: 10vw;
+    padding-bottom: 5vw;
     margin-bottom: 5vw;
-    background-size:cover; 
+    background-size: cover;
     background-image: url('https://image.freepik.com/free-vector/close-up-black-marble-background_53876-58926.jpg');
 }
 
-.anchor{
+.verTodas {
+    width: 10vw;
+    background-color: #87CFBE;
+}
+
+.anchor {
     display: block;
-    height: 13vw; /*same height as header*/
-    margin-top: -13vw; /*same height as header*/
+    height: 13vw;
+    /*same height as header*/
+    margin-top: -13vw;
+    /*same height as header*/
     visibility: hidden;
-  }
+}
 
 .card {
     width: 80% !important;
 }
-.tituloTexto
-{
+
+.tituloTexto {
     padding-top: 1.6%;
-    line-height:20px;
+    line-height: 20px;
     font-family: "Montserrat-SemiBold";
     font-size: 50px;
-    color: rgb(255 ,255,255);
-
-
-
-
+    color: rgb(255, 255, 255);
 }
-.texto1
-{
-   // margin-top: 5%;
+
+.texto1 {
+    // margin-top: 5%;
     font-family: "Montserrat-SemiBold";
     font-size: 22px;
-    color: rgb(255 ,255,255);
+    color: rgb(255, 255, 255);
 }
-.texto2
-{
-   // margin-top: 7%;
+
+.texto2 {
+    // margin-top: 7%;
     font-family: "Montserrat-Light";
     font-size: 18px;
-    color: rgb(255 ,255,255);
+    color: rgb(255, 255, 255);
 }
-.verTodo
-{
+
+.verTodo {
     font-family: "Montserrat-SemiBold";
     font-size: 12px;
-    line-height:30px;
+    line-height: 30px;
 }
-.tiempo
-{
+
+.tiempo {
     text-align: center;
 }
-.coccion
-{
+
+.coccion {
     text-align: end;
- 
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left,
+.carousel-control.right {
     left: 0;
     z-index: 1;
-  }
+}
 
-.col-6{
+.col-6 {
     max-height: 365px;
 }
 
-img{
+img {
     max-height: 225px;
 }
 
-h5{
+h5 {
     font-family: "Montserrat-SemiBold";
     font-size: medium;
 }
 
-p{
+p {
     font-size: 11px;
     font-family: "Montserrat-Light";
-    
-    
+}
 
+@media screen and (max-width: 1024px) {
+    .verTodas {
+        width: 12vw;
+        background-color: #87CFBE;
+    }
 }
 
 @media screen and (max-width: 414px) {
-   
-.col-8
-{
-    display: none;
+    .verTodas {
+        width: 33vw;
+        background-color: #87CFBE;
+    }
+    .col-8 {
+        display: none;
+    }
+    .col-12 {
+        align-items: center;
+        padding-left: 30px;
+    }
+    .celular {
+        .tituloTexto {
+            font-family: "PlayfairDisplay-Bold";
+            font-size: 52px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .texto1 {
+            margin-top: 5%;
+            font-family: "Montserrat-SemiBold";
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .texto2 {
+            margin-top: 7%;
+            font-family: "Montserrat-Light";
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        .verTodo {
+            font-family: "Montserrat-SemiBold";
+            font-size: 10px;
+            line-height: 30px;
+            text-align: center;
+            padding-left: 32%;
+        }
+    }
 }
-.col-12
-{
-    align-items: center;
-    padding-left: 30px;
-}
-
-.celular
-{
-    .tituloTexto
-{
-   
-    font-family: "PlayfairDisplay-Bold";
-    font-size: 52px;
-    color: rgb(255 ,255,255);
-    text-align: center;
-    
-
-}
-.texto1
-{
-    margin-top: 5%;
-    font-family: "Montserrat-SemiBold";
-    font-size: 20px;
-    color: rgb(255 ,255,255);
-    text-align: center;
-}
-.texto2
-{
-    margin-top: 7%;
-    font-family: "Montserrat-Light";
-    font-size: 15px;
-    color: rgb(255 ,255,255);
-    text-align: center;
-}
-.verTodo
-{
-    font-family: "Montserrat-SemiBold";
-    font-size: 10px;
-    line-height:30px;
-    text-align: center;
-}
-}
-}
-  

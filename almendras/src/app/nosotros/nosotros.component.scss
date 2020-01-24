@@ -3,6 +3,21 @@ h1 {
     font-family: 'PlayfairDisplay-Black';
 }
 
+.contm3 {
+    padding-top: 8%;
+    margin-left: 10%
+}
+
+.sobreN {
+    padding-bottom: 5%;
+}
+
+.accor {
+    visibility: visible;
+    animation-name: fadeInLeft;
+    margin-left: 6%;
+}
+
 .tituloSobreNosotros {
     font-family: 'Montserrat-SemiBold';
     font-size: 40px;
@@ -145,28 +160,6 @@ h2 {
     z-index: 1;
     position: relative;
 }
-
-
-/* .efectoAlmendra {
-    background: url('src/assets/imagenes/almendrasBaja.png');
-    background-attachment: fixed;
-    background-size: 70%;
-    width: 100%;
-    z-index: 3;
-    position: relative; */
-
-
-/*     //background: transparent;
-} */
-
-
-/* .fondoConocenos{
-    //background: url("../../assets/imagenes/fondoconocenos.png") no-repeat fixed; 
-    background-size: 100% 100%;
-    max-width: 100%;
-    height: auto;
-  
-  } */
 
 //robado de la pag de almendra
 .animation {
@@ -380,6 +373,326 @@ hr.new5 {
 
 .accordion-style2 {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1366px) {
+    .sobreN {
+        padding-bottom: 5%;
+    }
+    .contm3 {
+        padding-top: 6%;
+        margin-left: 10%
+    }
+    .accor {
+        visibility: visible;
+        animation-name: fadeInLeft;
+        margin-left: -2%;
+    }
+    .tituloOrgullosos {
+        font-family: 'Montserrat-Medium';
+        font-size: 17px;
+        color: #665048;
+        text-align: center;
+        padding-top: 7%;
+        margin-left: -20%;
+    }
+    /* accordion style 2 */
+    .accordion-style2 .panel {
+        background: transparent;
+        border: none;
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+    .accordion-style2 .panel-title {
+        background: transparent;
+        border: none
+    }
+    /* accordion style 2 */
+    .accordion-style2 .panel {
+        background: transparent;
+        border: none;
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+    .accordion-style2 .panel-title {
+        background: transparent;
+        border: none
+    }
+    .accordion-style2 .panel .panel-heading {
+        background: #fff;
+        border-radius: 0;
+        padding: 5px 15px 5px
+    }
+    .accordion-style2 .panel-body {
+        padding: 25px 10px 20px;
+        border-top: none;
+        font-size: 0.9rem
+    }
+    .accordion-style2 .panel-heading i {
+        font-size: 25px;
+        margin: 0;
+    }
+    .accordion-style2 .panel-title {
+        padding: 0;
+    }
+    .accordion-style2 .tab-tag {
+        font-size: 20px;
+        padding: 0;
+        margin-right: 7px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .accordion-style2 a,
+    .accordion-style2 a:hover,
+    .accordion-style2 a:hover i {
+        color: #fff;
+        ;
+    }
+    .accordion-style2 a:hover i {
+        color: black;
+    }
+    .accordion-style2 i {
+        color: black;
+    }
+    .accordion-style2 .panel-default:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        margin-bottom: 0;
+    }
+    .accordion-style2 {
+        margin-bottom: 0;
+    }
+    .accordion-style2 .panel-body {
+        padding: 25px 20px 20px;
+        border-top: none
+    }
+    .accordion-style2 .panel-heading i {
+        font-size: 25px;
+        margin: 0;
+    }
+    .accordion-style2 .panel-title {
+        padding: 0;
+    }
+    .accordion-style2 .tab-tag {
+        font-size: 20px;
+        padding: 0;
+        margin-right: 7px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .accordion-style2 a,
+    .accordion-style2 a:hover,
+    .accordion-style2 a:hover i {
+        color: #fff;
+        ;
+    }
+    .accordion-style2 a:hover i {
+        color: black;
+    }
+    .accordion-style2 i {
+        color: black;
+    }
+    .accordion-style2 .panel-default:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        margin-bottom: 0;
+    }
+    .accordion-style2 {
+        margin-bottom: 0;
+    }
+    .numero {
+        color: #665048;
+        font-family: 'Montserrat-Bold';
+        font-size: 30px;
+    }
+    .textoBotones {
+        color: #87CFBE;
+        font-family: 'Montserrat-Medium';
+        font-size: 20px;
+    }
+    .tituloConocenos {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 67px;
+        padding-top: 1%;
+        color: rgb(119, 87, 70)
+    }
+    .tituloSobreNosotros {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 24px;
+        color: #665048;
+    }
+    h2 {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 67px;
+        color: #665048;
+        line-height: 54px;
+        margin-bottom: 0%;
+        padding-top: 0%;
+    }
+    .pt-8 {
+        padding-top: 4%;
+    }
+    .baja {
+        margin-top: -8%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .sobreN {
+        padding-bottom: 1%;
+    }
+    .contm3 {
+        padding-top: 5.5%;
+        margin-left: 10%
+    }
+    .accor {
+        visibility: visible;
+        animation-name: fadeInLeft;
+        margin-left: -2%;
+    }
+    .tituloOrgullosos {
+        font-family: 'Montserrat-Medium';
+        font-size: 17px;
+        color: #665048;
+        text-align: center;
+        padding-top: 7%;
+        margin-left: -20%;
+    }
+    /* accordion style 2 */
+    .accordion-style2 .panel {
+        background: transparent;
+        border: none;
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+    .accordion-style2 .panel-title {
+        background: transparent;
+        border: none
+    }
+    /* accordion style 2 */
+    .accordion-style2 .panel {
+        background: transparent;
+        border: none;
+        margin-bottom: 15px;
+        box-shadow: none;
+    }
+    .accordion-style2 .panel-title {
+        background: transparent;
+        border: none
+    }
+    .accordion-style2 .panel .panel-heading {
+        background: #fff;
+        border-radius: 0;
+        padding: 5px 15px 5px
+    }
+    .accordion-style2 .panel-body {
+        padding: 25px 10px 20px;
+        border-top: none;
+        font-size: 0.9rem
+    }
+    .accordion-style2 .panel-heading i {
+        font-size: 20px;
+        margin: 0;
+    }
+    .accordion-style2 .panel-title {
+        padding: 0;
+    }
+    .accordion-style2 .tab-tag {
+        font-size: 20px;
+        padding: 0;
+        margin-right: 7px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .accordion-style2 a,
+    .accordion-style2 a:hover,
+    .accordion-style2 a:hover i {
+        color: #fff;
+        ;
+    }
+    .accordion-style2 a:hover i {
+        color: black;
+    }
+    .accordion-style2 i {
+        color: black;
+    }
+    .accordion-style2 .panel-default:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        margin-bottom: 0;
+    }
+    .accordion-style2 {
+        margin-bottom: 0;
+    }
+    .accordion-style2 .panel-body {
+        padding: 25px 20px 20px;
+        border-top: none
+    }
+    .accordion-style2 .panel-heading i {
+        font-size: 20px;
+        margin: 0;
+    }
+    .accordion-style2 .panel-title {
+        padding: 0;
+    }
+    .accordion-style2 .tab-tag {
+        font-size: 20px;
+        padding: 0;
+        margin-right: 7px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .accordion-style2 a,
+    .accordion-style2 a:hover,
+    .accordion-style2 a:hover i {
+        color: #fff;
+        ;
+    }
+    .accordion-style2 a:hover i {
+        color: black;
+    }
+    .accordion-style2 i {
+        color: black;
+    }
+    .accordion-style2 .panel-default:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+        margin-bottom: 0;
+    }
+    .accordion-style2 {
+        margin-bottom: 0;
+    }
+    .numero {
+        color: #665048;
+        font-family: 'Montserrat-Bold';
+        font-size: 17px;
+    }
+    .textoBotones {
+        color: #87CFBE;
+        font-family: 'Montserrat-Medium';
+        font-size: 17px;
+    }
+    .tituloConocenos {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 24px;
+        padding-top: 1%;
+        color: rgb(119, 87, 70)
+    }
+    .tituloSobreNosotros {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 24px;
+        color: #665048;
+    }
+    h2 {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 22px;
+        color: #665048;
+        line-height: 54px;
+        margin-bottom: 0%;
+        padding-top: 0%;
+    }
+    .pt-8 {
+        padding-top: 0;
+    }
+    .baja {
+        margin-top: -8%;
+    }
 }
 
 @media only screen and (max-width: 415px) {
