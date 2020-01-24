@@ -16,6 +16,43 @@
    
 }
 
+.form-check-label{
+   font-family: "Montserrat-Regular";
+  // font-size: 40px;
+   color: black;
+}
+
+.fondoGris{
+   background-color: lightgrey;
+}
+
+.tituloBuscador{
+   line-height:20px;
+   font-family: "Montserrat-Bold";
+   font-size: 40px;
+   color: black;
+   margin-left: 2vw;
+}
+
+.col-md-4{
+   max-height: 365px;
+}
+
+.anchor{
+   display: block;
+   height: 13vw; /*same height as header*/
+   margin-top: -13vw; /*same height as header*/
+   visibility: hidden;
+ }
+
+.card {
+   width: 80% !important;
+}
+
+.max {
+   max-height: 225px;
+}
+
 .responsive{
    width: 100%;
    height: auto;
