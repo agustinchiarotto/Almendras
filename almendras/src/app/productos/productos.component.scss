@@ -233,6 +233,12 @@ img {
     montserrat ligth interlineado 17 tama;o 14 bajar en nuestros
   } */
 
+@media only screen and (max-width: 1024px) {
+    img {
+        max-width: 80%;
+    }
+}
+
 @media only screen and (max-width: 415px) {
     .textoProductosNegrita {
         font-family: "Montserrat-SemiBold";
