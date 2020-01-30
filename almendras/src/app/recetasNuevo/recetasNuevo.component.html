@@ -1,87 +1,83 @@
+<div class="header" style="">
 
-<div class="header"  style="" >
-
-    <a [routerLink]="['/home']"  routerLinkActive="active">
-    <img src="{{ruta}}"
-    [ngStyle]="{'heigth':hamburguesa ? '' :'', 'width':hamburguesa ? '':'', 'margin-left':hamburguesa && !movil ? '43vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}"
-    [ngStyle]="{'margin-left':movil ? '-5%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
-    alt="logoBV"
-    style="margin-top: 0.5%;">
+    <a [routerLink]="['/home']" routerLinkActive="active">
+        <img src="{{ruta}}" [ngStyle]="{'heigth':hamburguesa ? '' :'', 'width':hamburguesa ? '':'', 'margin-left':hamburguesa && !movil ? '43vw':'0%', 'transition':hamburguesa ? '1.5s':'0.5s'}" [ngStyle]="{'margin-left':movil ? '-5%':'0%', 'transition':hamburguesa ? '1.5s':'1s'}"
+            alt="logoBV" style="margin-top: 0.5%;">
     </a>
 </div>
 
-<img src="assets/imagenes/recetas/header_recetas.png" alt="" class="responsive"  style="display: block;">
+<img src="assets/imagenes/recetas/header_recetas.png" alt="" class="responsive" style="display: block;">
 
 <div class="row ml-4 mr-4">
-    <div class="col-md-3 col-sm-12 fondoGris" >
+    <div class="col-md-3 col-sm-12 fondoGris">
         <p class="tituloBuscador" style="margin-bottom: 30%;margin-top: 20%;">
             BUSCADOR
         </p>
-        <p class="tituloBuscador mt-4" >
+        <p class="tituloBuscador sei mt-4">
             Sabor
         </p>
-        <div class="form-check mt-1" style="margin-left: 9%;" >
-            <input class="form-check-input" type="checkbox" name="exampleRadios" id="dulce" value="dulce" >
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="exampleRadios" id="dulce" value="dulce">
             <label class="form-check-label" for="dulce" style="padding-top: 0.5%;">
               Dulces
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;">
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
             <input class="form-check-input" type="checkbox" name="exampleRadios" id="salado" value="salado">
             <label class="form-check-label" for="salado" style="padding-top: 0.5%;">
               Salados
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;">
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
             <input class="form-check-input" type="checkbox" name="exampleRadios" id="natural" value="natural">
             <label class="form-check-label" for="natural" style="padding-top: 0.5%;">
              Naturales  
             </label>
-          </div>
+        </div>
 
-        <p class="tituloBuscador" style="margin-top: 15%;">
+        <p class="tituloBuscador sei" style="margin-top: 15%;">
             Ingredientes
         </p>
-        <div class="form-check mt-1" style="margin-left: 9%;" >
-            <input class="form-check-input" type="checkbox" name="ingredientes" id="almendra" value="almendra" >
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="almendra" value="almendra">
             <label class="form-check-label" for="almendra" style="padding-top: 0.5%;">
               Almendras
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;">
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
             <input class="form-check-input" type="checkbox" name="ingredientes" id="avellana" value="avellana">
             <label class="form-check-label" for="avellana" style="padding-top: 0.5%;">
               Avellanas
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;">
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
             <input class="form-check-input" type="checkbox" name="ingredientes" id="nuez" value="nuez">
             <label class="form-check-label" for="nuez" style="padding-top: 0.5%;">
               Nueces
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;" >
-            <input class="form-check-input" type="checkbox" name="ingredientes" id="pasa" value="pasa" >
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
+            <input class="form-check-input" type="checkbox" name="ingredientes" id="pasa" value="pasa">
             <label class="form-check-label" for="pasa" style="padding-top: 0.5%;">
               Pasas
             </label>
-          </div>
-          <div class="form-check mt-1" style="margin-left: 9%;">
+        </div>
+        <div class="form-check mt-1" style="margin-left: 9%;">
             <input class="form-check-input" type="checkbox" name="ingredientes" id="harina" value="harina">
             <label class="form-check-label" for="harina" style="padding-top: 0.5%;">
                 Harina de Almendras
             </label>
-          </div>
-        
+        </div>
 
 
 
-          <div class="form-check mb-4" style="margin-left: 9%;margin-top: 15%;">
+
+        <div class="form-check mb-4" style="margin-left: 9%;margin-top: 15%;">
             <input class="form-check-input" type="checkbox" name="ingredientes exampleRadios" id="todos" value="todos">
             <label class="form-check-label" for="todos" style="padding-top: 0.5%;">
 Todas           
  </label>
-          </div>
+        </div>
     </div>
 
 

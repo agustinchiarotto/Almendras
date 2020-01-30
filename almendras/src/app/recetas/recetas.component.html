@@ -269,7 +269,13 @@
                 <div>
 
                 </div>
-                <p class="tituloTexto" style="vertical-align: top;">Recetas</p>
+                <div *ngIf="receta">
+                    <p class="tituloTexto" style="vertical-align: top;">RECETAS</p>
+                </div>
+                <div *ngIf="!receta">
+                    <p class="tituloTexto" style="vertical-align: top;">Recetas</p>
+                </div>
+                <!-- <p class="tituloTexto" style="vertical-align: top;">Recetas</p> -->
                 <p class="texto1">¡Con almendras se puede preparar todo tipo de platos, ya sean dulces o salados!</p>
                 <p class="texto2">Los frutos secos son un gran aliado en la cocina, las almendras probablemente sean protagonistas de grandes platos como los que esncontrarás acontinuación. </p>
                 <div class="verTodo" style="padding-top: 2%;">

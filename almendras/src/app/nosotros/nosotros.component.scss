@@ -538,9 +538,10 @@ hr.new5 {
 @media only screen and (max-width: 1024px) {
     .sobreN {
         padding-bottom: 1%;
+        padding-top: 2%;
     }
     .contm3 {
-        padding-top: 5.5%;
+        padding-top: 1%;
         margin-left: 10%
     }
     .accor {
@@ -622,7 +623,8 @@ hr.new5 {
         margin-bottom: 0;
     }
     .accordion-style2 .panel-body {
-        padding: 25px 20px 20px;
+        padding: 10px 20px 10px;
+        /* aca toque era 25 y 20 */
         border-top: none
     }
     .accordion-style2 .panel-heading i {
@@ -671,13 +673,14 @@ hr.new5 {
     .tituloConocenos {
         font-family: 'Montserrat-SemiBold';
         font-size: 24px;
-        padding-top: 1%;
+        padding-top: 5%;
         color: rgb(119, 87, 70)
     }
     .tituloSobreNosotros {
         font-family: 'Montserrat-SemiBold';
         font-size: 24px;
         color: #665048;
+        margin-left: 0%;
     }
     h2 {
         font-family: 'Montserrat-SemiBold';
@@ -696,6 +699,15 @@ hr.new5 {
 }
 
 @media only screen and (max-width: 415px) {
+    .rectanguloEnBlanco {
+        height: 20vw;
+    }
+    hr.new4 {
+        width: 100%;
+        border: 4px solid rgb(237, 209, 133);
+        background-color: black;
+        margin-top: 5.7%;
+    }
     /* accordion style 2 */
     .accordion-style2 .panel {
         background: transparent;
