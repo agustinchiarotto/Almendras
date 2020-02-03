@@ -698,9 +698,13 @@ hr.new5 {
     }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 416px) {
     .rectanguloEnBlanco {
         height: 20vw;
+    }
+    .fondoAmarillo {
+        background-color: rgb(237, 209, 133);
+        height: 0.5em;
     }
     hr.new4 {
         width: 100%;

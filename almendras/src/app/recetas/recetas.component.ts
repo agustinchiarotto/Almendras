@@ -17,7 +17,7 @@ export class RecetasComponent implements OnInit {
   ngOnInit() {
     this.ancho=window.innerWidth;
    
-    if(this.ancho<414)
+    if(this.ancho<416)
     {
         this.receta=true;
     }
