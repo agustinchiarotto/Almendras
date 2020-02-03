@@ -252,7 +252,6 @@ devolverImagen(producto: any) {
  onclickDulce(producto: any) {
    if (!this.movil) {
   this.cambiarImagen(producto);
-
    this.mostrarDulces = true;
    producto.click = true;
   }

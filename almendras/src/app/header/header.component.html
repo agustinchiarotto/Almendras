@@ -45,8 +45,12 @@
           <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'celeste':!movil}">
         <a class="nav-link" href="#contacto"   routerLinkActive="active" >CONTACTO</a>
       </li>
+      <li class="nav-item">
+        <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'naranja':!movil}">
+      <a class="nav-link" href="#recetas"   routerLinkActive="active" >RECETAS</a>
+    </li>
     
-      <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
+    <!--   <li  class="nav-item" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" >
 
 
           <hr class=" mb-2" [ngStyle]="{'display':hamburguesa ? 'none' :'block'}" [ngClass]="{'naranja':!movil}">
@@ -60,7 +64,7 @@
             (keydown.enter)="buscar()">        
           </form>
 
-      </li>
+      </li> -->
 
     </ul>
 
