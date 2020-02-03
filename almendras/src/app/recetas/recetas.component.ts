@@ -12,6 +12,8 @@ import { RouterModule } from '@angular/router';
 export class RecetasComponent implements OnInit {
   receta:boolean=false;
   ancho:any;
+  number:any;
+  movil = false;
   constructor( private _rotuer:Router) { }
 
   ngOnInit() {
@@ -20,6 +22,10 @@ export class RecetasComponent implements OnInit {
     if(this.ancho<414)
     {
         this.receta=true;
+    }
+
+    if (number < 380 ) {
+      this.movil = true;
     }
   }
   
