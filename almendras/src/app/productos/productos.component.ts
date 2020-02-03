@@ -208,7 +208,7 @@ naturales = [
 
   ngOnInit() {
 
-    if (window.innerWidth < 414) {
+    if (window.innerWidth < 416) {
       this.movil = true;
     }
 

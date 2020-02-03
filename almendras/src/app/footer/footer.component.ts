@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.ancho=window.innerWidth;
-    if(this.ancho<414){
+    if(this.ancho<415){
       this.movilV=true
     }
     if(this.ancho>415 && this.ancho<1400){

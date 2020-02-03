@@ -72,7 +72,7 @@ export class NosotrosComponent implements OnInit {
 
     this.ancho = window.innerWidth;
     console.log('El ancho es: ' + this.ancho);
-    if (this.ancho < 414) {
+    if (this.ancho < 416) {
         this.movil = true;
     }
   }
