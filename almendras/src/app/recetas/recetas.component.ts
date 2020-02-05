@@ -24,7 +24,7 @@ export class RecetasComponent implements OnInit {
         this.receta=true;
     }
 
-    if (number < 380 ) {
+    if (this.number < 416 ) {
       this.movil = true;
     }
   }
