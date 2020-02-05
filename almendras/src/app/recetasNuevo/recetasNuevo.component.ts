@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd } from '@angular/router';
 import { Router} from '@angular/router';
 
 
@@ -16,6 +16,9 @@ export class RecetasNuevoComponent implements OnInit {
   ancho:any;
   ruta = 'assets/imagenes/logoChico.png';
 
+
+
+  
   //ingredientes - sabores
   dulce = false;
   salado = false;
@@ -173,8 +176,10 @@ export class RecetasNuevoComponent implements OnInit {
  ];
 
 
+
+
   constructor(
-    private activatedRoute:ActivatedRoute, private _rotuer:Router) { }
+    private activatedRoute:ActivatedRoute, private rotuer:Router) { }
 
   ngOnInit() {
     this.hamburguesa = false;
@@ -183,7 +188,12 @@ export class RecetasNuevoComponent implements OnInit {
     if (number < 380 ) {
       this.movil = true;
     }
+
   }
+
+  ngAfterViewInit() {
+    window.scrollTo(0, 0);
+ }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

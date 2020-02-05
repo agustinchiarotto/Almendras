@@ -62,7 +62,7 @@ export class HeaderComponent implements OnInit {
      // console.log('david true');
     }
 
-    if (number < 380 ) {
+    if (number < 850 ) {
       this.movil = true;
     }
   }
