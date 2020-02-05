@@ -190,7 +190,32 @@
         //  box-shadow: 10px 10px 5px #000000;
     }
     
-    @media only screen and (max-width: 1366px) {
+    @media only screen and (max-width: 1920px) {
+        .offset-md-4 {
+            margin-left: 11%;
+        }
+        .pantgrande {
+            padding-right: 0%;
+            padding-left: 11%;
+        }
+        .face {
+            padding-left: 7%;
+        }
+        .insta {
+            padding-left: 0%;
+            padding-right: 6%;
+            margin-top: 0vh;
+        }
+    }
+    
+    @media only screen and (max-width: 1444px) {
+        .pantgrande {
+            padding-right: 0%;
+            padding-left: 6%;
+        }
+        .offset-md-4 {
+            margin-left: 15.333333%;
+        }
         .footer3 {
             background: url("../../assets/imagenes/footer/fondo_footer-01.jpg");
             //background: url("../../assets/imagenes/footerweb-07.png");
