@@ -375,9 +375,9 @@ hr.new5 {
     margin-bottom: 0;
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1444px) {
     .sobreN {
-        padding-bottom: 0%;
+        padding-bottom: 5%;
     }
     .contm3 {
         padding-top: 6%;
@@ -386,7 +386,7 @@ hr.new5 {
     .accor {
         visibility: visible;
         animation-name: fadeInLeft;
-        margin-left: -2%;
+        margin-left: 5%;
     }
     .tituloOrgullosos {
         font-family: 'Montserrat-Medium';
@@ -516,7 +516,7 @@ hr.new5 {
     }
     .tituloSobreNosotros {
         font-family: 'Montserrat-SemiBold';
-        font-size: 24px;
+        font-size: 30px;
         color: #665048;
     }
     h2 {
