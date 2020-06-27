@@ -101,12 +101,12 @@ Todas
                             </div>
                             <div class="col-3 align-items-center" *ngIf="!movil">
                                 <img src="../../assets/imagenes/recetas/icono_sombrero.png" alt="" class="icono">
-                                <p class="gorro"><strong>{{receta.dificultad}}</strong></p>
+                                <p class="gorro" [ngClass]="{'gorro2':receta.dificultad == 'Fácil'  }"><strong>{{receta.dificultad}}</strong></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
 
     </div>

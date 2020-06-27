@@ -72,8 +72,13 @@
     max-height: 94%
 }
 
-//para trabajo responsive usar min-width. Hay q definir uno por cada tamaño del mas chico al mas grande
-//pedirle a las chicas la imagen en la medida necesaria. De otra forma siempre se va a deformar.
+
+@media screen and (max-width: 1370px) {
+    .tituloMensaje {
+        font-size: 44px;
+    }
+}
+
 @media screen and (max-width: 812px) {
     .trama {
         background-image: none; //url('src/assets/imagenes/contacto/contactanoscelu.jpg');

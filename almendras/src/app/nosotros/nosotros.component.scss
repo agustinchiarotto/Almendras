@@ -376,6 +376,12 @@ hr.new5 {
 }
 
 @media only screen and (max-width: 1444px) {
+
+    .conocenosImagen {
+        background-size: 107% 72%;
+        height: 55vw;
+    }
+
     .sobreN {
         padding-bottom: 5%;
     }
@@ -390,10 +396,10 @@ hr.new5 {
     }
     .tituloOrgullosos {
         font-family: 'Montserrat-Medium';
-        font-size: 17px;
+        font-size: 18px;
         color: #665048;
         text-align: center;
-        padding-top: 7%;
+        padding-top: 13%;
         margin-left: -20%;
     }
     /* accordion style 2 */

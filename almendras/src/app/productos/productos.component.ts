@@ -188,7 +188,7 @@ naturales = [
 
 {
   nombre: 'HARINA',
-  negrita: 'HARINA 000',
+  negrita: 'HARINA CON PIEL',
   imagen: '../../assets/imagenes/productos/naturales_harina01.jpg',
   imagen2: '../../assets/imagenes/etiquetas/etiquetas_harinas_1.png',
   imagenCE: '../../assets/imagenes/info_nutri/harina_000.png',
@@ -197,7 +197,7 @@ naturales = [
 },
 {
   nombre: 'HARINA',
-  negrita: 'HARINA 0000',
+  negrita: 'HARINA SIN PIEL',
   imagen: '../../assets/imagenes/productos/naturales_harina_02.jpg' ,
   imagen2: '../../assets/imagenes/etiquetas/etiquetas_harina2.png',
   imagenCE: '../../assets/imagenes/info_nutri/harina_0000.png',

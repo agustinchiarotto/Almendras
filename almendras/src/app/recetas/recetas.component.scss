@@ -103,6 +103,19 @@
         font-size: 11px;
         font-family: "Montserrat-Light";
     }
+
+    @media screen and (max-width: 1370px) {
+        .gorro {
+            padding-left: 37%;
+            font-size: 10px;
+            width: 100px;    
+        }
+        .gorro2 {
+            padding-left: 45%;
+            font-size: 10px;
+            width: 100px;    
+        }
+    }
     
     @media screen and (max-width: 1024px) {
         .verTodas {
