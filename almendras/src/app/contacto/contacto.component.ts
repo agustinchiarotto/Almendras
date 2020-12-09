@@ -35,12 +35,6 @@ export class ContactoComponent implements OnInit {
 
 
   enviarMail(f: NgForm){
-    console.log("envio un mail  CON " + this.model.nombre
-    +this.model.apellido
-    +this.model.tel
-    +this.model.localidad
-    +this.model.email
-    );
     this.contactoService.enviarMail(this.model.nombre,this.model.apellido,this.model.email,this.model.tel,this.model.localidad,this.model.mensaje)
 
     Swal.fire({

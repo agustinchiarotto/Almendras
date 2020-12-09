@@ -71,7 +71,6 @@ export class NosotrosComponent implements OnInit {
   ngOnInit() {
 
     this.ancho = window.innerWidth;
-    console.log('El ancho es: ' + this.ancho);
     if (this.ancho < 416) {
         this.movil = true;
     }

@@ -31,8 +31,6 @@ export class FooterComponent implements OnInit {
       this.tabletH=true
      
     }
-
-    console.log("movil chico tablet "+this.movilV+ " "+ this.chico+" "+this.tabletH)
   }
 
 }

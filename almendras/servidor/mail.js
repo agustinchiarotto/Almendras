@@ -40,7 +40,7 @@ function sendMail (req, res){
   }
 
   var transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
     auth: {
 
       user: 'almendrasbuenosvientos@gmail.com', // ACA COLOCAR EL MAIL Y PASS DEL GMAIL DE BUENO 
@@ -52,14 +52,14 @@ function sendMail (req, res){
   transporter.sendMail(mailOptions, function(error, info){
     if (error){
       console.log(error);
-      res.status(500).send({message:err.message});
+      res.status(500).send({message:error.message});
     }else{
-      console.log('Mail enviado');
+      console.log('Mail 1 enviado');
       res.status(200).send({message:'Mail enviado'});
     }
   })
-  texto= "Muchas gracias por contactarte con nosotros. En breve nos estaremos comunicando. \n Atentemente Buenos Vientos \n \n wwww.buenosvientos.com.ar"
-  asunto=" Buenos Vientos"
+  texto= "Muchas gracias por contactarte con nosotros. En breve nos estaremos comunicando. \nAtentamente Buenos Vientos \n \nwwww.buenosvientos.com.ar"
+  asunto="Buenos Vientos"
  
   var mailOptions = {
     from: destinatario,
@@ -72,9 +72,9 @@ function sendMail (req, res){
   transporter.sendMail(mailOptions, function(error, info){
     if (error){
       console.log(error);
-      res.status(500).send({message:err.message});
+      res.status(500).send({message:error.message});
     }else{
-      console.log('Mail enviado');
+      console.log('Mail 2 enviado');
       res.status(200).send({message:'Mail enviado'});
     }
   })

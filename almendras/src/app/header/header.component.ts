@@ -59,7 +59,6 @@ export class HeaderComponent implements OnInit {
 
     if (number > 1650) {
       this.david = true;
-     // console.log('david true');
     }
 
     if (number < 850 ) {
