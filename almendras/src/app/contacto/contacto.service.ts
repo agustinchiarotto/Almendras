@@ -8,7 +8,7 @@ import { Mail } from './mail';
 @Injectable()
 export class ContactoService {
     private headers = new Headers({ 'Content-Type': 'application/json' });
-    private contactoURL = "www.buenosvientos.com.ar"+"/contacto:4000";  // URL a la api
+    private contactoURL = "http://www.buenosvientos.com.ar"+"/contacto:4000";  // URL a la api
 
     constructor(
         private http: Http,
